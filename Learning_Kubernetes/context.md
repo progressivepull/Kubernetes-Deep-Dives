@@ -1,10 +1,10 @@
-# 1 Introduction
+# 1. Introduction
  
 * [ 1.1 Setting sail on your Kubernetes voyage ]( ./LESSON_1/1.1_Setting_sail_on_your_Kubernetes_voyage.md )
  
 * [ 1.2 What you should know ]( ./LESSON_1/1.2_What_you_should_know.md )
  
-# 2 Kubernetes and the Cloud-Native Ecosystem
+# 2. Kubernetes and the Cloud-Native Ecosystem
  
 * [ 2.1 What is Kubernetes ]( ./LESSON_2/2.1_What_is_Kubernetes.md )
  
@@ -12,7 +12,7 @@
  
 * [ 2.3 What is cloud native ]( ./LESSON_2/2.3_What_is_cloud_native.md )
  
-# 3 Setting Up and Getting Oriented
+# 3. Setting Up and Getting Oriented
  
 * [ 3.1 Install Docker on Windows ]( ./LESSON_3/3.1_Install_Docker_on_Windows.md )
  
@@ -64,7 +64,7 @@
  
 * [ 6.4 Kubernetes cluster components ]( ./LESSON_6/6.4_Kubernetes_cluster_components.md )
  
-# 7 Advanced Topics
+# 7. Advanced Topics
  
 * [ 7.1 Ways to manage Kubernetes pods ]( ./LESSON_7/7.1_Ways_to_manage_Kubernetes_pods.md )
  
@@ -72,6 +72,6 @@
  
 * [ 7.3 Kubernetes security ]( ./LESSON_7/7.3_Kubernetes_security.md )
  
-# 8._Conclusion
+# 8. Conclusion
  
 * [ 8.1 Next steps on your Kubernetes voyage ]( ./LESSON_8/8.1_Next_steps_on_your_Kubernetes_voyage.md )
