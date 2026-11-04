@@ -2,7 +2,7 @@
 
 
 # References
-* [ Learning Kubernetes | Kim Schlesinger | GitHub ](https://github.com/LinkedInLearning/learning-kubernetes-3212391)
+* [ Learning Kubernetes | GitHub ](https://github.com/LinkedInLearning/learning-kubernetes-3212391)
 
 ---
 
