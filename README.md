@@ -63,33 +63,33 @@
  
 ## 5. Complex Application Deployment
  
-* [ 5.1 Expose your application to the internet with a LoadBalancer ]( ./LESSON_5/5.1_Expose_your_application_to_the_internet_with_a_LoadBalancer.md )
+* [ 5.1 Expose your application to the internet with a LoadBalancer ]( ./Learning_Kubernetes/LESSON_5/5.1_Expose_your_application_to_the_internet_with_a_LoadBalancer/5.1_Expose_your_application_to_the_internet_with_a_LoadBalancer.md )
  
-* [ 5.2 Add resource requests and limits to your pod ]( ./LESSON_5/5.2_Add_resource_requests_and_limits_to_your_pod.md )
+* [ 5.2 Add resource requests and limits to your pod ]( ./Learning_Kubernetes/LESSON_5/5.2_Add_resource_requests_and_limits_to_your_pod/5.2_Add_resource_requests_and_limits_to_your_pod.md )
  
-* [ 5.3 Delete your Kubernetes objects and tear down your cluster ]( ./LESSON_5/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluster.md )
+* [ 5.3 Delete your Kubernetes objects and tear down your cluster ]( ./Learning_Kubernetes/LESSON_5/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluste/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluster.md )
  
 ## 6. Kubernetes Architecture
  
-* [ 6.1 The Kubernetes control plane ]( ./LESSON_6/6.1_The_Kubernetes_control_plane.md )
+* [ 6.1 The Kubernetes control plane ]( ./Learning_Kubernetes/LESSON_6/6.1_The_Kubernetes_control_plane/6.1_The_Kubernetes_control_plane.md )
  
-* [ 6.2 Kubernetes worker nodes ]( ./LESSON_6/6.2_Kubernetes_worker_nodes.md )
+* [ 6.2 Kubernetes worker nodes ]( ./Learning_Kubernetes/LESSON_6/6.2_Kubernetes_worker_nodes/6.2_Kubernetes_worker_nodes.md )
  
-* [ 6.3 How the control plane and nodes work together ]( ./LESSON_6/6.3_How_the_control_plane_and_nodes_work_together.md )
+* [ 6.3 How the control plane and nodes work together ]( ./Learning_Kubernetes/LESSON_6/6.3_How_the_control_plane_and_nodes_work_together/6.3_How_the_control_plane_and_nodes_work_together.md )
  
-* [ 6.4 Kubernetes cluster components ]( ./LESSON_6/6.4_Kubernetes_cluster_components.md )
+* [ 6.4 Kubernetes cluster components ]( ./Learning_Kubernetes/LESSON_6/6.4_Kubernetes_cluster_components/6.4_Kubernetes_cluster_components.md )
  
 ## 7. Advanced Topics
  
-* [ 7.1 Ways to manage Kubernetes pods ]( ./LESSON_7/7.1_Ways_to_manage_Kubernetes_pods.md )
+* [ 7.1 Ways to manage Kubernetes pods ]( ./Learning_Kubernetes/LESSON_7/7.1_Ways_to_manage_Kubernetes_pods/7.1_Ways_to_manage_Kubernetes_pods.md )
  
-* [ 7.2 Running stateful workloads ]( ./LESSON_7/7.2_Running_stateful_workloads.md )
+* [ 7.2 Running stateful workloads ]( ./Learning_Kubernetes/LESSON_7/7.2_Running_stateful_workloads/7.2_Running_stateful_workloads.md )
  
-* [ 7.3 Kubernetes security ]( ./LESSON_7/7.3_Kubernetes_security.md )
+* [ 7.3 Kubernetes security ]( ./Learning_Kubernetes/LESSON_7/7.3_Kubernetes_security/7.3_Kubernetes_security.md )
  
 ## 8. Conclusion
  
-* [ 8.1 Next steps on your Kubernetes voyage ]( ./LESSON_8/8.1_Next_steps_on_your_Kubernetes_voyage.md )
+* [ 8.1 Next steps on your Kubernetes voyage ]( ./Learning_Kubernetes/LESSON_8/8.1_Next_steps_on_your_Kubernetes_voyage/8.1_Next_steps_on_your_Kubernetes_voyage.md )
 
 ---
 
