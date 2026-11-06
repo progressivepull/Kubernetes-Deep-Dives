@@ -1,9 +1,5 @@
 # Kubernetes-Deep-Dives
 
-
-# References
-* [ Learning Kubernetes | GitHub ](https://github.com/LinkedInLearning/learning-kubernetes-3212391)
-
 ---
 
 # Learning Kubernetes Context
