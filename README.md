@@ -56,6 +56,8 @@
 * [ 4.7 Challenge ]( ./Learning_Kubernetes//LESSON_4/4.7_Challenge/4.7_Challenge.md )
  
 * [ 4.8 Solution ]( ./Learning_Kubernetes/LESSON_4/4.8_Solution/4.8_Solution.md )
+
+* [ 4.9 Chapter Quiz ]( ./Learning_Kubernetes/LESSON_4/4.9_Chapter_Quiz/4.9_Chapter_Quiz.md )
  
 ## 5. Complex Application Deployment
  
