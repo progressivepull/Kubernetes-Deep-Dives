@@ -26,6 +26,30 @@ The project structure is:
 
 <img src="media/Angular_Mongo_Kubernetes_Project_Overview.png" style="width:7.0in;height:6.5in" />
 
+## **Install Angular CLI globally**
+
+Run:
+
+```bash
+npm install -g @angular/cli
+```
+
+Verify installation:
+```bash
+ng version
+```
+
+Recommended commands
+| Command | Description |
+|---|---|
+| `npm install` | Install project dependencies |
+| `npm install -g @angular/cli` | Install Angular CLI globally |
+| `ng version` | Check Angular CLI version |
+| `npx ng serve` | Start Angular without global CLI |
+| `npm start` | Start application using package.json |
+| `ng build` | Build Angular application |
+
+
 ## **How to Install Project Dependencies Using npm install for Angular Application**
 
 The npm install command installs all dependencies required by your Node.js or Angular project.
