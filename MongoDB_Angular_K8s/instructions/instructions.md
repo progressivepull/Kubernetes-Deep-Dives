@@ -24,7 +24,7 @@ Download the complete Angular + MongoDB Docker/Kubernetes project
 
 The project structure is:
 
-<img src="media/Angular_Mongo_Kubernetes_Project_Overview.png" style="width:6.5in;height:6.5in" />
+<img src="media/Angular_Mongo_Kubernetes_Project_Overview.png" style="width:7.0in;height:6.5in" />
 
 **3. Run with Docker Compose**
 
