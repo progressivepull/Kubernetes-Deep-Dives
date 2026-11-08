@@ -87,6 +87,9 @@
 * [ 7.2 Running stateful workloads ]( ./Learning_Kubernetes/LESSON_7/7.2_Running_stateful_workloads/7.2_Running_stateful_workloads.md )
  
 * [ 7.3 Kubernetes security ]( ./Learning_Kubernetes/LESSON_7/7.3_Kubernetes_security/7.3_Kubernetes_security.md )
+
+* [ 7.4 Chapter Quiz ]( ./Learning_Kubernetes/LESSON_7/7.4_Chapter_Quiz/7.4_Chapter_Quiz.md )
+
  
 ## 8. Conclusion
  
