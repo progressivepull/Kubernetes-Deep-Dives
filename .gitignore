@@ -1,1 +1,3 @@
 .claude/*
+/MongoDB_Angular_K8s/angular-mongo-k8s/frontend/node_modules
+MongoDB_Angular_K8s/angular-mongo-k8s/frontend/package-lock.json
