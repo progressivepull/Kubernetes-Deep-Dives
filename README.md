@@ -76,6 +76,9 @@
 * [ 6.3 How the control plane and nodes work together ]( ./Learning_Kubernetes/LESSON_6/6.3_How_the_control_plane_and_nodes_work_together/6.3_How_the_control_plane_and_nodes_work_together.md )
  
 * [ 6.4 Kubernetes cluster components ]( ./Learning_Kubernetes/LESSON_6/6.4_Kubernetes_cluster_components/6.4_Kubernetes_cluster_components.md )
+
+* [ 6.5_Chapter_Quiz ]( ./Learning_Kubernetes/LESSON_6/6.5_Chapter_Quiz/6.5_Chapter_Quiz.md )
+
  
 ## 7. Advanced Topics
  
