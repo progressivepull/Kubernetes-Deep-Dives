@@ -77,7 +77,7 @@
  
 * [ 6.4 Kubernetes cluster components ]( ./Learning_Kubernetes/LESSON_6/6.4_Kubernetes_cluster_components/6.4_Kubernetes_cluster_components.md )
 
-* [ 6.5_Chapter_Quiz ]( ./Learning_Kubernetes/LESSON_6/6.5_Chapter_Quiz/6.5_Chapter_Quiz.md )
+* [ 6.5 Chapter Quiz ]( ./Learning_Kubernetes/LESSON_6/6.5_Chapter_Quiz/6.5_Chapter_Quiz.md )
 
  
 ## 7. Advanced Topics
