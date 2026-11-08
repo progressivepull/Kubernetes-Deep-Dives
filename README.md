@@ -65,7 +65,7 @@
  
 * [ 5.2 Add resource requests and limits to your pod ]( ./Learning_Kubernetes/LESSON_5/5.2_Add_resource_requests_and_limits_to_your_pod/5.2_Add_resource_requests_and_limits_to_your_pod.md )
  
-* [ 5.3 Delete your Kubernetes objects and tear down your cluster ]( ./Learning_Kubernetes/LESSON_5/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluste/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluster.md )
+* [ 5.3 Delete your Kubernetes objects and tear down your cluster ]( ./Learning_Kubernetes/LESSON_5/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluster/5.3_Delete_your_Kubernetes_objects_and_tear_down_your_cluster.md )
  
 ## 6. Kubernetes Architecture
  
