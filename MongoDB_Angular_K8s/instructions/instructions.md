@@ -6,7 +6,7 @@ We'll build a complete example using Angular, Node.js, MongoDB, Docker, and Kube
 
 Angular will provide the frontend, Node.js/Express will provide the REST API, and MongoDB will store the data.
 
-## ** Application architecture**
+## **Application architecture**
 
 The project will support two deployment methods:
 
@@ -16,7 +16,7 @@ The project will support two deployment methods:
 
 The sample application will allow you to add, view, and delete records stored in MongoDB.
 
-## ** Complete project files**
+## **Complete project files**
 
 I've created the project with the Angular application, Express REST API, MongoDB configuration, Dockerfiles, Docker Compose, Kubernetes YAML, and setup instructions.
 
@@ -26,9 +26,9 @@ The project structure is:
 
 <img src="media/Angular_Mongo_Kubernetes_Project_Overview.png" style="width:7.0in;height:6.5in" />
 
-## ** How to Install Project Dependencies Using npm install for Angular Application **
+## **How to Install Project Dependencies Using npm install for Angular Application **
 
-## ** Run with Docker Compose**
+## **Run with Docker Compose**
 
 Open a terminal inside the extracted project directory.
 
@@ -49,7 +49,7 @@ Open your browser at:
 
 You can add items, retrieve them from MongoDB, and delete them.
 
-## ** Run with Kubernetes**
+## **Run with Kubernetes**
 
 The example uses kind to create a local Kubernetes cluster.
 
@@ -104,7 +104,7 @@ service/frontend 8080:80
 
 Open \*\*http://localhost:8080\*\*.
 
-## ** How the application communicates**
+## **How the application communicates**
 
 | **Application** | **Docker/Kubernetes name** | **Port** |
 |-----------------|----------------------------|----------|
