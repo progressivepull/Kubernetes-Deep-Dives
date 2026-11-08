@@ -1,4 +1,4 @@
-# instructions
+# Instructions
 
 # **Docker and Kubernetes Project: Angular + MongoDB**
 
@@ -26,7 +26,76 @@ The project structure is:
 
 <img src="media/Angular_Mongo_Kubernetes_Project_Overview.png" style="width:7.0in;height:6.5in" />
 
-## **How to Install Project Dependencies Using npm install for Angular Application **
+## **How to Install Project Dependencies Using npm install for Angular Application**
+
+The npm install command installs all dependencies required by your Node.js or Angular project.
+
+1. Open a terminal
+Navigate to your project directory.
+
+```bash
+cd frontend
+```
+
+2. Check Node.js and npm
+Verify that Node.js and npm are installed:
+
+```bash
+node --version
+npm --version
+```
+
+3. Install dependencies
+Run:
+
+```bash
+npm install
+```
+This command will:
+1. Read the package.json file.
+2. Download the required packages and dependencies.
+3. Install packages into the node_modules directory.
+4. Create or update the package-lock.json file.
+5. Resolve compatible package versions.
+
+4. Verify installation
+Check that dependencies were installed:
+
+```bash
+npm list --depth=0
+```
+
+5. Start your Angular application
+Run:
+
+```bash
+npm start
+```
+
+Or directly:
+```bash
+ng serve
+```
+
+Open your browser:
+http://localhost:4200
+
+Common npm commands
+
+| Command | Description |
+|---|---|
+| `npm install` | Install all dependencies |
+| `npm install package-name` | Install a specific package |
+| `npm install -D package-name` | Install a development dependency |
+| `npm uninstall package-name` | Remove a package |
+| `npm update` | Update compatible packages |
+| `npm list` | List installed packages |
+| `npm audit` | Check for security vulnerabilities |
+| `npm cache clean --force` | Clear npm cache |
+
+
+Important: Run npm install from the directory containing your package.json file.
+
 
 ## **Run with Docker Compose**
 
