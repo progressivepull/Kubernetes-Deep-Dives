@@ -172,4 +172,4 @@ You can upload it here, and I can convert it into a Kubernetes project with:
 # Reference
 * [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/)
 
-[README](./../README.md)
+[README](./../../README.md)
