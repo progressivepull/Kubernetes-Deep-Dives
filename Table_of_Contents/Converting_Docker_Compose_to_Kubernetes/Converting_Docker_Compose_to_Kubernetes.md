@@ -215,11 +215,11 @@ http://localhost:4200
 
 **5. Kubernetes architecture**
 
-<img src="Converting_Dcoker_Compose_to_Kubernetes_media/media/image1.png" style="width:6.5in;height:4.81389in" />
+<img src="Converting_Docker_Compose_to_Kubernetes_media/media/image1.png" style="width:6.5in;height:4.81389in" />
 
 **6. Recommended project structure**
 
-<img src="Converting_Dcoker_Compose_to_Kubernetes_media/media/image2.png" style="width:2.77122in;height:2.61495in" />
+<img src="Converting_Docker_Compose_to_Kubernetes_media/media/image2.png" style="width:2.77122in;height:2.61495in" />
 
 With this folder structure, deploy using:
 
@@ -229,4 +229,4 @@ kubectl apply -f kubernetes/
 
 Note: These files run Angular's development server, matching your Docker Compose command. For production, it is generally better to build Angular into static files and serve them through Nginx.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
