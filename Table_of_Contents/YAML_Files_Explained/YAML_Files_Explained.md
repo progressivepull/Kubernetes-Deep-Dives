@@ -37,45 +37,32 @@ Use a Deployment when you want Kubernetes to create and maintain application Pod
 
 Example: Run two Angular containers.
 
-ymal
-
+```yaml
 apiVersion: apps/v1
-
 kind: Deployment
 
 metadata:
-
-name: angular-app
-
-spec:
-
-replicas: 2
-
-selector:
-
-matchLabels:
-
-app: angular
-
-template:
-
-metadata:
-
-labels:
-
-app: angular
+  name: angular-app
 
 spec:
+  replicas: 2
 
-containers:
+  selector:
+    matchLabels:
+      app: angular
 
-\- name: angular
+  template:
+    metadata:
+      labels:
+        app: angular
 
-image: my-angular-app:1.0
-
-ports:
-
-\- containerPort: 80
+    spec:
+      containers:
+        - name: angular
+          image: my-angular-app:1.0
+          ports:
+            - containerPort: 80
+```
 
 replicas: 2 tells Kubernetes to maintain two Angular Pods. The image must be available to your cluster.
 
@@ -83,33 +70,34 @@ replicas: 2 tells Kubernetes to maintain two Angular Pods. The image must be ava
 
 Pods can be replaced, and their IP addresses can change. A Service provides a stable way to reach matching Pods.
 
-ymal
-
+```yaml
 apiVersion: v1
-
 kind: Service
 
 metadata:
-
-name: angular-service
+  name: angular-service
 
 spec:
+  type: ClusterIP
 
-type: ClusterIP
+  selector:
+    app: angular
 
-selector:
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+```
 
-app: angular
 
-ports:
-
-\- port: 80
-
-targetPort: 80
 
 ClusterIP makes the Service available inside the cluster. For local testing, you can forward a port:
 
+```bash
+
 kubectl port-forward svc/angular-service 8080:80
+
+```
 
 Then open http://localhost:8080.
 
@@ -117,21 +105,17 @@ Then open http://localhost:8080.
 
 Use a ConfigMap for application settings that are not secret.
 
-ymal
-
+```yaml
 apiVersion: v1
-
 kind: ConfigMap
 
 metadata:
-
-name: app-config
+  name: app-config
 
 data:
-
-NODE_ENV: "production"
-
-API_URL: <http://backend-service:3000>
+  NODE_ENV: "production"
+  API_URL: "http://backend-service:3000"
+```
 
 You can reference these values from a Pod's environment or mount them as files. For Angular, remember that browser-side configuration often needs to be built into the frontend or served through a runtime configuration file.
 
@@ -139,23 +123,20 @@ You can reference these values from a Pod's environment or mount them as files. 
 
 Use Secrets for passwords, tokens, and other sensitive configuration.
 
-ymal
-
+```yaml
 apiVersion: v1
-
 kind: Secret
 
 metadata:
-
-name: mongodb-secret
+  name: mongodb-secret
 
 type: Opaque
 
 stringData:
+  MONGO_INITDB_ROOT_USERNAME: "admin"
+  MONGO_INITDB_ROOT_PASSWORD: "replace-me"
 
-MONGO_INITDB_ROOT_USERNAME: "admin"
-
-MONGO_INITDB_ROOT_PASSWORD: "replace-me"
+```
 
 stringData allows you to supply plain text and lets Kubernetes encode the stored values. However, Kubernetes Secrets are not automatically encrypted at rest, and this example should not be committed to Git with a real password.
 
@@ -163,27 +144,22 @@ stringData allows you to supply plain text and lets Kubernetes encode the stored
 
 Use a PersistentVolumeClaim when application data must survive Pod replacement.
 
-ymal
-
+```yaml
 apiVersion: v1
-
 kind: PersistentVolumeClaim
 
 metadata:
-
-name: mongodb-pvc
+  name: mongodb-pvc
 
 spec:
+  accessModes:
+    - ReadWriteOnce
 
-accessModes:
+  resources:
+    requests:
+      storage: 5Gi
 
-\- ReadWriteOnce
-
-resources:
-
-requests:
-
-storage: 5Gi
+```
 
 MongoDB can mount this claim at /data/db. The cluster needs a compatible storage provisioner or existing PersistentVolume. For a production MongoDB deployment, a StatefulSet is generally more suitable than a Deployment.
 
@@ -191,39 +167,28 @@ MongoDB can mount this claim at /data/db. The cluster needs a compatible storage
 
 Use an Ingress when you want to route HTTP or HTTPS traffic to your Service.
 
-ymal
-
+```yaml
 apiVersion: networking.k8s.io/v1
-
 kind: Ingress
 
 metadata:
-
-name: angular-ingress
+  name: angular-ingress
 
 spec:
+  rules:
+    - host: angular.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: angular-service
+                port:
+                  number: 80
+```
 
-rules:
 
-\- host: angular.local
-
-http:
-
-paths:
-
-\- path: /
-
-pathType: Prefix
-
-backend:
-
-service:
-
-name: angular-service
-
-port:
-
-number: 80
 
 This requires an installed Ingress controller, DNS or hosts-file resolution for angular.local, and networking that makes the controller reachable. Creating the YAML file alone does not expose the application.
 
@@ -250,7 +215,7 @@ kubectl apply -f k8s/
 
 Or apply them individually:
 
-bash
+```bash
 
 kubectl apply -f configmap.yaml
 
@@ -264,9 +229,11 @@ kubectl apply -f service.yaml
 
 kubectl apply -f ingress.yaml
 
+```
+
 Check the Kubernetes resources:
 
-bash
+```bash
 
 kubectl get pods
 
@@ -282,6 +249,8 @@ kubectl get pvc
 
 kubectl get ingress
 
+```
+
 Important: You don't need to create all these files for every application. Start with a Deployment and Service, then add configuration, secrets, storage, and external routing when your application requires them.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
