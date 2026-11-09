@@ -1,4 +1,4 @@
-# Converting Dcoker Compose to Kubernetes
+# Converting Docker Compose to Kubernetes
 
 docker-compose.yaml
 
