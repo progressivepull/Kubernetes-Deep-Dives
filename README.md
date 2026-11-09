@@ -1,7 +1,7 @@
 # Kubernetes-Deep-Dives
 
 # Table of Contents
-* [Migrate Docker Compose to Kubernetes YML File](./Migrate_Docker_Compose_Kubernetes.md)
+* [Migrate Docker Compose to Kubernetes YML File](./Table_of_Contents/Migrate_Docker_Compose_Kubernetes/Migrate_Docker_Compose_Kubernetes.md)
 
 ---
 
@@ -128,7 +128,7 @@ practical examples.
 
 **2. Kubernetes Architecture**
 
-![](media/image1.png)
+![](README_media/image1.png)
 
 Simplified Kubernetes architecture showing the control plane, worker
 nodes, Pods, and containers.
@@ -203,7 +203,7 @@ illustrative Deployment name java-app.
 
 **Example network flow**
 
-![](media/image2.png)
+![](README_media/image2.png)
 
 Traffic is routed to one of the healthy application Pods.
 

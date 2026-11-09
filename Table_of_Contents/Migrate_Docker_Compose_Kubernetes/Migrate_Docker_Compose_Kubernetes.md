@@ -155,7 +155,7 @@ kubectl delete deployment backend
 ```
 
 # Recommended migration workflow
-<img src="media/migration-workflow-kompose.png" style="width:6.0in;height:4.5in" />
+<img src="Migrate_Docker_Compose_Kubernetes_media/media/migration-workflow-kompose.png" style="width:6.0in;height:4.5in" />
 
 ## Let me help you migrate your actual Compose application.
 Do you have an existing docker-compose.yml?
@@ -172,4 +172,4 @@ You can upload it here, and I can convert it into a Kubernetes project with:
 # Reference
 * [Translate a Docker Compose File to Kubernetes Resources](https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/)
 
-[README](./README.md)
+[README](./../README.md)
