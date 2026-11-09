@@ -46,43 +46,32 @@ Example: A Java application may run in three Pods distributed across two worker 
 
 **Example: Deployment with three replicas**
 
+```yaml
 apiVersion: apps/v1
-
 kind: Deployment
 
 metadata:
-
-name: java-app
-
-spec:
-
-replicas: 3
-
-selector:
-
-matchLabels:
-
-app: java-app
-
-template:
-
-metadata:
-
-labels:
-
-app: java-app
+  name: java-app
 
 spec:
+  replicas: 3
 
-containers:
+  selector:
+    matchLabels:
+      app: java-app
 
-\- name: java-container
+  template:
+    metadata:
+      labels:
+        app: java-app
 
-image: nginx:latest
-
-ports:
-
-\- containerPort: 80
+    spec:
+      containers:
+        - name: java-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+```
 
 This example creates three replicas of an Nginx container, despite the illustrative Deployment name java-app.
 
@@ -203,4 +192,4 @@ For beginners and technical interviews, prioritize:
 
 Official reference: [Kubernetes Concepts Documentation](https://kubernetes.io/docs/concepts/).
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
