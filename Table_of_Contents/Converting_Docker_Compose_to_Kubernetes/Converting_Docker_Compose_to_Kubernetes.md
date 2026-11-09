@@ -2,37 +2,29 @@
 
 docker-compose.yaml
 
-yaml
-
+```yaml
 version: '3.9'
 
 services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
 
-angular-app:
+    container_name: angular-app
 
-build:
+    ports:
+      - "4200:4200"
 
-context: .
+    volumes:
+      - .:/app
+      - /app/node_modules
 
-dockerfile: Dockerfile
+    command: npm start -- --host 0.0.0.0
 
-container_name: angular-app
-
-ports:
-
-\- "4200:4200"
-
-volumes:
-
-\- .:/app
-
-\- /app/node_modules
-
-command: npm start -- --host 0.0.0.0
-
-environment:
-
-\- CHOKIDAR_USEPOLLING=true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+```
 
 You can convert your Docker Compose version: '3.9' configuration into Kubernetes using two main YAML files:
 
@@ -46,69 +38,48 @@ Your Docker Compose configuration uses a bind mount for development. Kubernetes 
 
 This file defines your Angular application container, environment variables, ports, and startup command.
 
-yaml
-
+```yaml
 apiVersion: apps/v1
-
 kind: Deployment
 
 metadata:
-
-name: angular-app
-
-labels:
-
-app: angular-app
+  name: angular-app
+  labels:
+    app: angular-app
 
 spec:
+  replicas: 1
 
-replicas: 1
+  selector:
+    matchLabels:
+      app: angular-app
 
-selector:
+  template:
+    metadata:
+      labels:
+        app: angular-app
 
-matchLabels:
+    spec:
+      containers:
+        - name: angular-app
+          image: angular-app:latest
+          imagePullPolicy: IfNotPresent
 
-app: angular-app
+          ports:
+            - containerPort: 4200
 
-template:
+          command: ["npm"]
+          args:
+            - "start"
+            - "--"
+            - "--host"
+            - "0.0.0.0"
 
-metadata:
+          env:
+            - name: CHOKIDAR_USEPOLLING
+              value: "true"
+```
 
-labels:
-
-app: angular-app
-
-spec:
-
-containers:
-
-\- name: angular-app
-
-image: angular-app:latest
-
-imagePullPolicy: IfNotPresent
-
-ports:
-
-\- containerPort: 4200
-
-command: \["npm"\]
-
-args:
-
-\- "start"
-
-\- "--"
-
-\- "--host"
-
-\- "0.0.0.0"
-
-env:
-
-\- name: CHOKIDAR_USEPOLLING
-
-value: "true"
 
 Explanation:
 
@@ -125,31 +96,25 @@ Explanation:
 
 This file makes your Angular application accessible through Kubernetes networking.
 
+```yaml
 apiVersion: v1
-
 kind: Service
 
 metadata:
-
-name: angular-app-service
+  name: angular-app-service
 
 spec:
+  type: ClusterIP
 
-type: ClusterIP
+  selector:
+    app: angular-app
 
-selector:
-
-app: angular-app
-
-ports:
-
-\- name: http
-
-protocol: TCP
-
-port: 4200
-
-targetPort: 4200
+  ports:
+    - name: http
+      protocol: TCP
+      port: 4200
+      targetPort: 4200
+```
 
 The ClusterIP service exposes Angular inside the Kubernetes cluster. You can access it from your computer using port forwarding.
 
@@ -173,41 +138,47 @@ Important: The Compose volumes are not directly replicated here. Kubernetes does
 
 Since you are using Kind, you can build the Angular Docker image and load it into your local Kubernetes cluster.
 
-Step 1 — Build Docker image
+## Step 1 — Build Docker image
 
-bash
+```bash
 
 docker build -t angular-app:latest .
+```
 
-Step 2 — Load image into Kind cluster
+## Step 2 — Load image into Kind cluster
 
-bash
+```bash
 
 kind load docker-image angular-app:latest --name angular-mongo
+```
 
-Step 3 — Deploy Angular application
+## Step 3 — Deploy Angular application
 
-bash
+```bash
 
 kubectl apply -f deployment.yaml
 
 kubectl apply -f service.yaml
+```
 
-Step 4 — Verify deployment
+## Step 4 — Verify deployment
 
-bash
+```bash
 
 kubectl get deployments
 
 kubectl get pods
 
 kubectl get services
+```
 
-Step 5 — Access Angular application
+## Step 5 — Access Angular application
 
-bash
+```bash
 
 kubectl port-forward service/angular-app-service 4200:4200
+
+```
 
 Open your browser:
 
@@ -223,9 +194,11 @@ http://localhost:4200
 
 With this folder structure, deploy using:
 
-bash
+```bash
 
 kubectl apply -f kubernetes/
+
+```
 
 Note: These files run Angular's development server, matching your Docker Compose command. For production, it is generally better to build Angular into static files and serve them through Nginx.
 
