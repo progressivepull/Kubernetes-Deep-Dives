@@ -5,9 +5,11 @@
 * [0.2 What you should know](./INTRODUCTION/0.2_What_you_should_know.md)
 
 # 1._Kubernetes_at_a_Glance
- * [ 1.1 Our application before Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes.md )
- * [ 1.2 What is Kubernetes ]( ./LESSON_1/1.2_What_is_Kubernetes.md )
- * [ 1.3 Our application after Kubernetes ]( ./LESSON_1/1.3_Our_application_after_Kubernetes.md )
+ * [ 1.1 Our application before Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes/1.1_Our_application_before_Kubernetes.md )
+ * [ 1.2 What is Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes/1.2_What_is_Kubernetes.md )
+ * [ 1.3 Our application after Kubernetes ]( ./LESSON_1/1.3_Our_application_after_Kubernetes/1.3_Our_application_after_Kubernetes.md )
+
+* [ 1.4 Recommended courses ]( ./LESSON_1/1.4_Recommended_courses/1.4_Recommended_courses.md )
  # 2._Setting_Up_Your_Environment
  * [ 2.1 Tools we will be using ]( ./LESSON_2/2.1_Tools_we_will_be_using.md )
  * [ 2.2 Preparing Windows machines ]( ./LESSON_2/2.2_Preparing_Windows_machines.md )
