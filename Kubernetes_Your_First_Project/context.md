@@ -11,13 +11,13 @@
 
 * [ 1.4 Recommended courses ]( ./LESSON_1/1.4_Recommended_courses/1.4_Recommended_courses.md )
  # 2._Setting_Up_Your_Environment
- * [ 2.1 Tools we will be using ]( ./LESSON_2/2.1_Tools_we_will_be_using.md )
- * [ 2.2 Preparing Windows machines ]( ./LESSON_2/2.2_Preparing_Windows_machines.md )
- * [ 2.3 Installing Podman Desktop on macOS ]( ./LESSON_2/2.3_Installing_Podman_Desktop_on_macOS.md )
- * [ 2.4 Installing Podman Desktop on Windows ]( ./LESSON_2/2.4_Installing_Podman_Desktop_on_Windows.md )
- * [ 2.5 Other popular container managers ]( ./LESSON_2/2.5_Other_popular_container_managers.md )
- * [ 2.6 Installing kind ]( ./LESSON_2/2.6_Installing_kind.md )
- * [ 2.7 Installing Helm ]( ./LESSON_2/2.7_Installing_Helm.md )
+ * [ 2.1 Tools we will be using ]( ./LESSON_2/2.1_Tools_we_will_be_using/2.1_Tools_we_will_be_using.md )
+ * [ 2.2 Preparing Windows machines ]( ./LESSON_2/2.2_Preparing_Windows_machines/2.2_Preparing_Windows_machines.md )
+ * [ 2.3 Installing Podman Desktop on macOS ]( ./LESSON_2/2.3_Installing_Podman_Desktop_on_macOS/2.3_Installing_Podman_Desktop_on_macOS.md )
+ * [ 2.4 Installing Podman Desktop on Windows ]( ./LESSON_2/2.4_Installing_Podman_Desktop_on_Windows/2.4_Installing_Podman_Desktop_on_Windows.md )
+ * [ 2.5 Other popular container managers ]( ./LESSON_2/2.5_Other_popular_container_managers/2.5_Other_popular_container_managers.md )
+ * [ 2.6 Installing kind ]( ./LESSON_2/2.6_Installing_kind/2.6_Installing_kind.md )
+ * [ 2.7 Installing Helm ]( ./LESSON_2/2.7_Installing_Helm/2.7_Installing_Helm.md )
  * [ 2.8 Installing AWS CLI and Azure CLI ]( ./LESSON_2/2.8_Installing_AWS_CLI_and_Azure_CLI.md )
  * [ 2.9 Installing AWS eksctl ]( ./LESSON_2/2.9_Installing_AWS_eksctl.md )
  * [ 2.10 Configuring AWS access ]( ./LESSON_2/2.10_Configuring_AWS_access.md )
