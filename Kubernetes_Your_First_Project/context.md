@@ -4,6 +4,9 @@
 
 * [0.2 What you should know](./INTRODUCTION/0.2_What_you_should_know.md)
 
+
+
+
 # 1._Kubernetes_at_a_Glance
 
  * [ 1.1 Our application before Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes/1.1_Our_application_before_Kubernetes.md )
@@ -13,6 +16,9 @@
  * [ 1.3 Our application after Kubernetes ]( ./LESSON_1/1.3_Our_application_after_Kubernetes/1.3_Our_application_after_Kubernetes.md )
 
 * [ 1.4 Recommended courses ]( ./LESSON_1/1.4_Recommended_courses/1.4_Recommended_courses.md )
+
+
+
 
  # 2._Setting_Up_Your_Environment
 
@@ -41,6 +47,9 @@
 * [ 2.12 Configuring Azure access with a service principal ]( ./LESSON_2/2.12_Configuring_Azure_access_with_a_service_principal/2.12_Configuring_Azure_access_with_a_service_principal.md )
 
 * [2.13 Chapter Quiz](./LESSON_2/2.13_Chapter_Quiz/2.13_Chapter_Quiz.md)
+
+
+
  
 # 3._Containerizing_Explore_California
  
