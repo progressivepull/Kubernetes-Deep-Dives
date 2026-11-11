@@ -59,7 +59,7 @@
  
 * [ 3.3 Building your image with Podman ]( ./LESSON_3/3.3_Building_your_image_with_Podman/3.3_Building_your_image_with_Podman.md )
  
-* [ 3.4 Building your image with Docker Build ]( ./LESSON_3/3.4_Building_your_image_with_Docker_Build/3.4_Building_your_image_with_Docker_Build.md )
+* [ 3.4 Building your image with Docker Build X ]( ./LESSON_3/3.4_Building_your_image_with_Docker_Buildx/3.4_Building_your_image_with_Docker_Buildx.md )
  
 * [ 3.5 Testing your changes ]( ./LESSON_3/3.5_Testing_your_changes/3.5_Testing_your_changes.md )
  
