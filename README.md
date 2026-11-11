@@ -82,7 +82,9 @@ A Kubernetes cluster consists of two major components:
 
 2.  Worker Nodes
 
-<img src="README_media/media/image3.png" style="width:6.5in;height:4.42222in" />**A. Control Plane**
+<img src="README_media/media/image3.png" style="width:6.5in;height:4.42222in" />
+
+**A. Control Plane**
 
 The Control Plane manages the Kubernetes cluster.
 
