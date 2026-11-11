@@ -20,220 +20,356 @@
 
 ---
 
-**Common Kubernetes Terms --- Beginner's Guide**
+**Kubernetes Introduction**
 
-Kubernetes (K8s) is an open-source container orchestration platform that
-automates deploying, managing, scaling, and recovering containerized
-applications.
+**1. What is Kubernetes?**
 
-Below are the most common Kubernetes terms, their definitions, and
-practical examples.
+Kubernetes (K8s) is an open-source container orchestration platform used to deploy, manage, scale, and monitor containerized applications.
 
-**1. Kubernetes Core Components**
+Kubernetes automates many tasks involved in running applications inside containers, including:
 
+- Deploying containerized applications.
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-  |Cluster            | A collection of machines running Kubernetes applications.                        |
-  |Node               | A physical or virtual machine that runs workloads.                               |
-  |Control Plane      | Components that manage the cluster and make scheduling decisions.                |
-  |Worker Node        | A node that runs application workloads in Pods.                                  |
-  |Pod                | The smallest deployable unit in Kubernetes; contains one or more containers.     |
-  |Container          | A packaged application with its dependencies.                                    |
-  |Image              | A read-only template used to create containers.                                  |
-  |Namespace          | A logical partition used to organize Kubernetes resources.                       |
-  |kubelet            | An agent on each node that ensures assigned Pods and containers are running.     |
-  |Container Runtime  | Software such as containerd that runs containers.                                |
-          
+- Scaling applications up and down.
 
-**2. Kubernetes Architecture**
+- Managing container failures.
 
-![](README_media/image1.png)
+- Distributing workloads across multiple servers.
 
-Simplified Kubernetes architecture showing the control plane, worker
-nodes, Pods, and containers.
+- Managing networking between containers.
 
-Example: A Java application may run in three Pods distributed across two
-worker nodes. Kubernetes monitors these Pods and can replace them if
-they fail.
+- Performing application updates without downtime.
 
-**3. Application Deployment and Scaling**
+- Managing application configuration and secrets.
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-  | Deployment      |       Manages application Pods and supports rolling updates and rollback.|
-  | Replica          |      A copy of a Pod used to increase availability or capacity.|
-  | ReplicaSet       |      Maintains the desired number of matching Pods.|
-  | StatefulSet     |       Manages stateful applications requiring stable identities and storage.|
-  | DaemonSet      |        Ensures a Pod runs on every eligible node, or selected nodes.|
-  | Job         |           Runs a task to completion.|
-  | CronJob          |      Runs Jobs on a recurring schedule.|
-  | Rolling Update  |       Gradually replaces older Pods with newer ones.|
-  | Horizontal Pod Autoscaler (HPA)    |     Automatically adjusts the number of Pods based on metrics.| 																			|
-  | Self-Healing      |     Kubernetes detects failures and replaces or restarts affected workloads.|
+Kubernetes is commonly used with Docker to run applications in production environments.
 
+<img src="README_media/media/image1.png" style="width:6.5in;height:3.675in" />
 
-**Example: Deployment with three replicas**
+**2. Why Do We Need Kubernetes?**
 
-```bash
+Imagine you have an application built with Angular, Spring Boot, and MongoDB.
 
+You package each application component into a Docker container.
+
+Without Kubernetes, you must manually manage:
+
+- Starting and stopping containers.
+
+- Restarting failed containers.
+
+- Scaling containers when traffic increases.
+
+- Distributing containers across servers.
+
+- Managing application updates.
+
+Kubernetes automates these responsibilities.
+
+Example:
+
+Suppose your application needs three backend instances.
+
+<img src="README_media/media/image2.png" style="width:6.5in;height:2.70069in" />
+
+Kubernetes can automatically restart a failed Pod and maintain the desired number of replicas.
+
+**3. Kubernetes Architecture**
+
+A Kubernetes cluster consists of two major components:
+
+1.  Control Plane
+
+2.  Worker Nodes
+
+<img src="README_media/media/image3.png" style="width:6.5in;height:4.42222in" />**A. Control Plane**
+
+The Control Plane manages the Kubernetes cluster.
+
+| **Component** | **Description** |
+|----|----|
+| API Server | Entry point for Kubernetes commands and API requests. |
+| etcd | Stores Kubernetes cluster configuration and state. |
+| Scheduler | Assigns Pods to appropriate Worker Nodes. |
+| Controller Manager | Ensures the cluster maintains its desired state. |
+| Cloud Controller Manager | Integrates Kubernetes with cloud provider infrastructure. |
+
+**B. Worker Nodes**
+
+Worker Nodes run your application containers.
+
+| **Component** | **Description** |
+|----|----|
+| Kubelet | Communicates with the Control Plane and manages Pods on the node. |
+| Kube-proxy | Implements Service networking rules on nodes. |
+| Container Runtime | Runs containers, such as containerd or CRI-O. |
+| Pods | Smallest deployable units in Kubernetes. |
+
+**4. Important Kubernetes Objects**
+
+These are some of the most important Kubernetes resources.
+
+## 1. Pod
+
+The smallest deployable unit in Kubernetes. A Pod contains one or more containers.
+
+<img src="README_media/media/image4.png" style="width:2.26843in;height:2.50424in" />
+
+## 2. Deployment
+
+Manages application Pods and replicas. Supports scaling and rolling updates.
+
+<img src="README_media/media/image5.png" style="width:2.96186in;height:1.83376in" />
+
+## 3. Service
+
+Provides a stable network endpoint for accessing Pods.
+
+<img src="README_media/media/image6.png" style="width:2.03531in;height:2.03814in" />
+
+## 4. ConfigMap and Secret
+
+Store application configuration and sensitive information, respectively.
+
+<img src="README_media/media/image7.png" style="width:3.30915in;height:2.29661in" />
+
+5\. Persistent Volume (PV)
+
+Provides persistent storage for applications.
+
+<img src="README_media/media/image8.png" style="width:2.03168in;height:2.08898in" />
+
+6\. Ingress
+
+Manages external HTTP and HTTPS access to services through an Ingress controller.
+
+<img src="README_media/media/image9.png" style="width:2.56213in;height:2.60593in" />
+
+**5. Kubernetes vs. Docker**
+
+Docker and Kubernetes serve different purposes.
+
+| **Feature** | **Docker** | **Kubernetes** |
+|----|----|----|
+| Primary purpose | Containerization | Container orchestration |
+| Build images | Yes | No |
+| Run containers | Yes | Through a container runtime |
+| Manage containers | Individual or grouped | Across a cluster |
+| Scaling | Manual or external tools | Automated and declarative |
+| Load balancing | Limited built-in options | Services and networking |
+| Self-healing | Limited | Yes |
+| Production orchestration | Not its primary role | Yes |
+
+Important: Docker builds container images. Kubernetes manages containerized applications across a cluster. Kubernetes does not require Docker Engine as its container runtime.
+
+**6. Kubernetes YAML Configuration**
+
+Kubernetes uses YAML files to define application resources.
+
+For example, a Deployment configuration:
+
+```yaml
+angular-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
-	name: java-app
+  name: angular-app
+
 spec:
-	replicas: 3
-	selector:
-		matchLabels:
-		app: java-app
-	template:
-		metadata:
-			labels:
-			app: java-app
-		spec:
-	containers:
-		- name: java-container
-		image: nginx:latest
-		ports:
-			- containerPort: 80
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: angular
+
+  template:
+    metadata:
+      labels:
+        app: angular
+
+    spec:
+      containers:
+        - name: angular
+          image: my-angular-app:1.0
+          ports:
+            - containerPort: 80
+
 ```
 
-This example creates three replicas of an Nginx container, despite the
-illustrative Deployment name java-app.
+Explanation:
 
-**4. Kubernetes Networking Terms**
+| **Property**  | **Description**                        |
+|---------------|----------------------------------------|
+| apiVersion    | Kubernetes API version.                |
+| kind          | Type of Kubernetes resource.           |
+| metadata      | Resource name and metadata.            |
+| replicas      | Number of desired Pods.                |
+| selector      | Identifies Pods managed by Deployment. |
+| template      | Defines how Pods are created.          |
+| containers    | Defines containers inside the Pod.     |
+| image         | Docker/container image to run.         |
+| containerPort | Port exposed by the container.         |
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-  | Service         |Provides a stable network endpoint for accessing a group of Pods. |
-  | ClusterIP      | A Service type accessible inside the cluster.|
-  | NodePort       | Exposes a Service on a port of each node.|
-  | LoadBalancer   | Exposes a Service through an external load balancer, when supported.|
-  | Ingress        | Defines HTTP/HTTPS routing rules for incoming traffic.|
-  | Ingress Controller        |Implements the routing rules defined by Ingress resources.|               											|								   
-  | Gateway API    | A newer, more expressive set of APIs for traffic routing. |
-  | CoreDNS         |Provides DNS-based service discovery inside Kubernetes.|
-  | NetworkPolicy  | Controls allowed network traffic between Pods and other endpoints.|
-  | CNI             |Container Network Interface, used by networking plugins to configure Pod networking.|
-                  
+**7. Common Kubernetes Commands**
 
+These commands are useful when working with Minikube or Docker Desktop Kubernetes.
 
-**Example network flow**
+| **Command** | **Description** |
+|----|----|
+| kubectl version | Display Kubernetes client and server versions. |
+| kubectl cluster-info | Display cluster information. |
+| kubectl get nodes | List cluster nodes. |
+| kubectl get pods | List Pods. |
+| kubectl get deployments | List Deployments. |
+| kubectl get services | List Services. |
+| kubectl get all | Display common resources in the current namespace. |
+| kubectl describe pod POD_NAME | Display detailed Pod information. |
+| kubectl logs POD_NAME | Display container logs. |
+| kubectl apply -f deployment.yaml | Create or update resources. |
+| kubectl delete -f deployment.yaml | Delete resources defined in a file. |
+| kubectl scale deployment angular-app --replicas=3 | Scale a Deployment to three replicas. |
 
-![](README_media/image2.png)
+**8. Kubernetes Deployment Workflow**
 
-Traffic is routed to one of the healthy application Pods.
+A typical application deployment workflow looks like this:
 
-**5. Kubernetes Storage Terms**
+<img src="README_media/media/image10.png" style="width:6.5in;height:4.19028in" />
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-  |Volume                  |Storage mounted into containers within a Pod.|
-  |PersistentVolume (PV)   |A cluster storage resource with a lifecycle independent of a particular Pod.|
- | PersistentVolumeClaim (PVC)   |A request for persistent storage by an application.|               |        																|
-  |StorageClass            |Defines a class of storage and its provisioning behavior. |                  
- | CSI                     |Container Storage Interface, allowing Kubernetes to integrate with storage systems. |                    
-  |emptyDir                |Temporary storage shared by containers in a Pod, deleted when the Pod is removed from its node.|
-                         
+1.  Develop your application.
 
+2.  Create a Dockerfile.
 
-Example: A PostgreSQL database uses a PVC so its data can survive Pod
-replacement.
+3.  Build a Docker image.
 
-**6. Configuration and Security**
+4.  Push the image to a container registry.
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-|  ConfigMap        | Stores non-sensitive application configuration. |
- | Secret            |Stores sensitive values such as passwords and tokens; additional encryption and access controls are recommended. |             
-|  ServiceAccount    |Provides an identity for workloads interacting with Kubernetes APIs.  |              
- | RBAC              |Role-Based Access Control, governing permissions to Kubernetes resources. |
- | Role              |Defines permissions within a namespace. |
-  |ClusterRole       |Defines permissions that can apply cluster-wide or to namespaced resources. |          
-  | RoleBinding       |Assigns a Role or ClusterRole within a namespace. |
- | Resource Requests |CPU and memory amounts used by Kubernetes for scheduling.   |        
-|  Resource Limits   |Configured maximum resource usage constraints for containers.  |    
- | SecurityContext   |Specifies security-related settings for Pods and  containers.|
-                   
+5.  Create Kubernetes YAML configuration files.
 
+6.  Deploy the application using kubectl.
 
-**7. Health, Monitoring, and Operations**
+7.  Kubernetes creates and manages Pods.
 
-  |**Term**           | **Definition**										                             |
-  |-------------------|----------------------------------------------------------------------------------|
-  |Liveness Probe   | Checks whether a container needs to be restarted.|                                   |
-  |Readiness Probe  | Checks whether a container is ready to receive traffic.|                             |     
- | Startup  Probe   | Allows slow-starting applications time to initialize. |                                                          |
- | kubectl      |Command-line tool used to manage Kubernetes resources.|
-  |Helm        | Package manager used to install and manage Kubernetes  applications.|
-  |Helm Chart   |A collection of templates and configuration for deploying an application.|
-  |Operator    | Software that extends Kubernetes controllers to automate application operations.|
-  |CRD          |CustomResourceDefinition, used to extend the Kubernetes API with new resource types.|
-  |etcd        | Distributed key-value store holding Kubernetes cluster ||
-              
+8.  Expose the application using a Kubernetes Service or Ingress.
 
+**9. Kubernetes Development Tools**
 
-**8. Most Common kubectl Commands**
+| **Tool** | **Purpose** |
+|----|----|
+| Docker Desktop | Runs containers and provides an optional local Kubernetes cluster. |
+| Minikube | Runs a local Kubernetes cluster for learning and development. |
+| kubectl | Command-line tool for managing Kubernetes. |
+| Helm | Kubernetes package manager. |
+| K9s | Terminal-based Kubernetes management interface. |
+| Kubernetes Dashboard | Web-based Kubernetes management interface. |
 
- 
- | **Command**      |                   **Purpose** |
-|-------------------|----------------------------------------------------------------------------------|
- | kubectl get pods                    |List Pods in the current namespace. |
- | kubectl get nodes                   |List cluster nodes. |
- | kubectl get deployments             |List Deployments. |
- | kubectl get services                |List Services. |
- | kubectl get namespaces             | List namespaces.|
- | kubectl describe pod my-pod         |Show detailed Pod information. |
- | kubectl logs my-pod                 |Display container logs.|
-|  kubectl apply -f app.yaml           |Create or update resources from YAML.   |                       
- |  kubectl delete -f app.yaml          |Delete resources defined in YAML. |
- |  kubectl scale deployment my-app --replicas=5    |Scale a Deployment to five Pods. |									|
- |  kubectl rollout status deployment/my-app             |Check Deployment rollout progress. |
-  | kubectl exec -it my-pod \-- /bin/sh |Open a shell in a running container, if available. |
-                                      
+**10. Learning Roadmap**
 
+A suggested learning sequence:
 
-**9. Kubernetes vs. Docker vs. Databricks**
+1.  Container Fundamentals
 
+Learn Docker images, containers, Dockerfiles, and Docker Compose.
 
- | **Technology**  | **Primary purpose**|
-|-------------------|----------------------------------------------------------------------------------|
- |  Docker           |Build and run application containers.|
- |  Kubernetes       |Orchestrate containers across clusters.|
- |  Apache Spark     |Distributed data processing engine.|
- |  Databricks       |Managed data, analytics, and AI platform built around technologies such as Spark and Delta Lake.  |
-                   
+2.  Kubernetes Fundamentals
 
+Learn clusters, Control Plane, Worker Nodes, and Pods.
 
-Kubernetes and Spark both distribute work across machines, but they
-solve different problems. Kubernetes schedules and manages containerized
-workloads, while Spark executes distributed data-processing tasks. Spark
-can run on Kubernetes, and Databricks abstracts much of the underlying
-infrastructure management.
+3.  Deployments and Services
 
-**10. Top 10 Kubernetes Terms to Learn First**
+Deploy applications and expose them using Services.
 
-For beginners and technical interviews, prioritize:
+4.  Networking and Storage
 
-1.  Cluster --- Group of Kubernetes machines.
+Learn Ingress, ConfigMaps, Secrets, PVs, and PVCs.
 
-2.  Node --- Machine participating in the cluster.
+5.  Application Management
 
-3.  Pod --- Smallest deployable Kubernetes workload unit.
+Learn scaling, rolling updates, health checks, and resource limits.
 
-4.  Container --- Packaged application and dependencies.
+6.  Advanced Kubernetes
 
-5.  Deployment --- Manages stateless application replicas.
+Learn Helm, StatefulSets, DaemonSets, RBAC, monitoring, and CI/CD.
 
-6.  Service --- Stable network access to Pods.
+**11. Hands-on Practice**
 
-7.  Namespace --- Logical resource organization.
+A good first project is a three-tier application:
 
-8.  ConfigMap --- Non-sensitive configuration.
+<img src="README_media/media/image11.png" style="width:6.5in;height:3.44792in" />
 
-9.  Secret --- Sensitive configuration data.
+You can practice:
 
-10. kubectl --- Kubernetes command-line interface.
+- Building Docker images.
 
-Official reference: [Kubernetes Concepts
-Documentation](https://kubernetes.io/docs/concepts/).
+- Creating Kubernetes Deployments.
+
+- Configuring Services.
+
+- Connecting Angular to Spring Boot.
+
+- Connecting Spring Boot to MongoDB.
+
+- Scaling application replicas.
+
+- Troubleshooting Pods and application logs.
+
+**12. Knowledge Check**
+
+Kubernetes Basics Quiz
+
+0 / 5 answered
+
+1. What is the primary purpose of Kubernetes?
+
+A. Building Docker images
+
+**B. Container orchestration**
+
+C. Writing application code
+
+**Correct B**
+
+2. What is the smallest deployable unit in Kubernetes?
+
+A. Node
+
+B. Deployment
+
+**C. Pod**
+
+**Correct C**
+
+3. Which Kubernetes component assigns Pods to Worker Nodes?
+
+**A. Scheduler**
+
+B. API Server
+
+C. Kubelet
+
+**Correct A**
+
+4. Which command lists Kubernetes Pods?
+
+A. kubectl get nodes
+
+**B. kubectl get pods**
+
+C. kubectl get services
+
+**Correct B**
+
+5. What is the purpose of a Kubernetes Service?
+
+A. Build container images
+
+**B. Provide stable network access to Pods**
+
+C. Store database records
+
+**Correct B**
+
+**Next step:** Build a hands-on Kubernetes project using your Angular, Spring Boot, and MongoDB application, starting with Docker images and Kubernetes Deployments.
+
+# Official Reference: 
+* [Kubernetes Concepts Documentation](https://kubernetes.io/docs/concepts/).
