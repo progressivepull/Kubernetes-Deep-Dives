@@ -321,53 +321,53 @@ Kubernetes Basics Quiz
 
 0 / 5 answered
 
-1. What is the primary purpose of Kubernetes?
+* 1. What is the primary purpose of Kubernetes?
 
-A. Building Docker images
+	- A. Building Docker images
 
-**B. Container orchestration**
+	- **B. Container orchestration**
 
-C. Writing application code
+	- C. Writing application code
 
 **Correct B**
 
-2. What is the smallest deployable unit in Kubernetes?
+* 2. What is the smallest deployable unit in Kubernetes?
 
-A. Node
+	- A. Node
 
-B. Deployment
+	- B. Deployment
 
-**C. Pod**
+	- **C. Pod**
 
 **Correct C**
 
-3. Which Kubernetes component assigns Pods to Worker Nodes?
+* 3. Which Kubernetes component assigns Pods to Worker Nodes?
 
-**A. Scheduler**
+	- **A. Scheduler**
 
-B. API Server
+	- B. API Server
 
-C. Kubelet
+	- C. Kubelet
 
 **Correct A**
 
-4. Which command lists Kubernetes Pods?
+* 4. Which command lists Kubernetes Pods?
 
-A. kubectl get nodes
+	- A. kubectl get nodes
 
-**B. kubectl get pods**
+	- **B. kubectl get pods**
 
-C. kubectl get services
+	- C. kubectl get services
 
 **Correct B**
 
-5. What is the purpose of a Kubernetes Service?
+* 5. What is the purpose of a Kubernetes Service?
 
-A. Build container images
+	- A. Build container images
 
-**B. Provide stable network access to Pods**
+	- **B. Provide stable network access to Pods**
 
-C. Store database records
+	- C. Store database records
 
 **Correct B**
 
