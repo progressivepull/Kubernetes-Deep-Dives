@@ -46,7 +46,7 @@ Kubernetes is commonly used with Docker to run applications in production enviro
 
 <img src="README_media/media/image1.png" style="width:6.5in;height:3.675in" />
 
-**2. Why Do We Need Kubernetes?**
+## **2. Why Do We Need Kubernetes?**
 
 Imagine you have an application built with Angular, Spring Boot, and MongoDB.
 
@@ -74,7 +74,7 @@ Suppose your application needs three backend instances.
 
 Kubernetes can automatically restart a failed Pod and maintain the desired number of replicas.
 
-**3. Kubernetes Architecture**
+## **3. Kubernetes Architecture**
 
 A Kubernetes cluster consists of two major components:
 
@@ -107,7 +107,7 @@ Worker Nodes run your application containers.
 | Container Runtime | Runs containers, such as containerd or CRI-O. |
 | Pods | Smallest deployable units in Kubernetes. |
 
-**4. Important Kubernetes Objects**
+## **4. Important Kubernetes Objects**
 
 These are some of the most important Kubernetes resources.
 
@@ -135,7 +135,7 @@ Store application configuration and sensitive information, respectively.
 
 <img src="README_media/media/image7.png" style="width:3.30915in;height:2.29661in" />
 
-## 5. Persistent Volume (PV)
+### 5. Persistent Volume (PV)
 
 Provides persistent storage for applications.
 
