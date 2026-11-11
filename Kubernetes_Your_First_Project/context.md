@@ -61,91 +61,109 @@
 * [ 3.8 Chapter Quiz]( ./LESSON_3/3.8_Chapter_Quiz/3.8_Chapter_Quiz.md )
 
 
+
+
+
 # 4._Running_Explore_California_Locally_within_Kubernetes
  
-* [ 4.1 Running your app locally within Kubernetes ]( ./LESSON_4/4.1_Running_your_app_locally_within_Kubernetes.md )
+* [ 4.1 Running your app locally within Kubernetes ]( ./LESSON_4/4.1_Running_your_app_locally_within_Kubernetes/4.1_Running_your_app_locally_within_Kubernetes.md )
  
-* [ 4.2 Creating your kind cluster ]( ./LESSON_4/4.2_Creating_your_kind_cluster.md )
+* [ 4.2 Creating your kind cluster ]( ./LESSON_4/4.2_Creating_your_kind_cluster/4.2_Creating_your_kind_cluster.md )
  
-* [ 4.3 Creating Kubernetes clusters locally ]( ./LESSON_4/4.3_Creating_Kubernetes_clusters_locally.md )
+* [ 4.3 Creating Kubernetes clusters locally ]( ./LESSON_4/4.3_Creating_Kubernetes_clusters_locally/4.3_Creating_Kubernetes_clusters_locally.md )
  
-* [ 4.4 Scaling Explore California with a deployment ]( ./LESSON_4/4.4_Scaling_Explore_California_with_a_deployment.md )
+* [ 4.4 Scaling Explore California with a deployment ]( ./LESSON_4/4.4_Scaling_Explore_California_with_a_deployment/4.4_Scaling_Explore_California_with_a_deployment.md )
  
-* [ 4.5 Exposing Explore California with a service ]( ./LESSON_4/4.5_Exposing_Explore_California_with_a_service.md )
+* [ 4.5 Exposing Explore California with a service ]( ./LESSON_4/4.5_Exposing_Explore_California_with_a_service/4.5_Exposing_Explore_California_with_a_service.md )
  
-* [ 4.6 Routing Explore California with an ingress ]( ./LESSON_4/4.6_Routing_Explore_California_with_an_ingress.md )
+* [ 4.6 Routing Explore California with an ingress ]( ./LESSON_4/4.6_Routing_Explore_California_with_an_ingress/4.6_Routing_Explore_California_with_an_ingress.md )
  
-* [ 4.7 Installing NGINX ingress controller ]( ./LESSON_4/4.7_Installing_NGINX_ingress_controller.md )
+* [ 4.7 Installing NGINX ingress controller ]( ./LESSON_4/4.7_Installing_NGINX_ingress_controller/4.7_Installing_NGINX_ingress_controller.md )
  
-* [ 4.8 Popular Ingress controllers ]( ./LESSON_4/4.8_Popular_Ingress_controllers.md )
+* [ 4.8 Popular Ingress controllers ]( ./LESSON_4/4.8_Popular_Ingress_controllers/4.8_Popular_Ingress_controllers.md )
  
-* [ 4.9 Testing your changes ]( ./LESSON_4/4.9_Testing_your_changes.md )
+* [ 4.9 Testing your changes ]( ./LESSON_4/4.9_Testing_your_changes/4.9_Testing_your_changes.md )
  
-* [ 4.10 Adding HTTPS to your website with cert-manager ]( ./LESSON_4/4.10_Adding_HTTPS_to_your_website_with_cert-manager.md )
+* [ 4.10 Adding HTTPS to your website with cert-manager ]( ./LESSON_4/4.10_Adding_HTTPS_to_your_website_with_cert-manager/4.10_Adding_HTTPS_to_your_website_with_cert-manager.md )
  
-* [ 4.11 Challenge Change the port number ]( ./LESSON_4/4.11_Challenge_Change_the_port_number.md )
+* [ 4.11 Challenge Change the port number ]( ./LESSON_4/4.11_Challenge_Change_the_port_number/4.11_Challenge_Change_the_port_number.md )
  
-* [ 4.12 Solution Change the port number ]( ./LESSON_4/4.12_Solution_Change_the_port_number.md )
+* [ 4.12 Solution Change the port number ]( ./LESSON_4/4.12_Solution_Change_the_port_number/4.12_Solution_Change_the_port_number.md )
+
+
+
+
  
 # 5._Packaging_Explore_California_with_Helm
  
-* [ 5.1 Why Helm ]( ./LESSON_5/5.1_Why_Helm.md )
+* [ 5.1 Why Helm ]( ./LESSON_5/5.1_Why_Helm/5.1_Why_Helm.md )
  
-* [ 5.2 Popular Kubernetes package managers ]( ./LESSON_5/5.2_Popular_Kubernetes_package_managers.md )
+* [ 5.2 Popular Kubernetes package managers ]( ./LESSON_5/5.2_Popular_Kubernetes_package_managers/5.2_Popular_Kubernetes_package_managers.md )
  
-* [ 5.3 Initializing your chart ]( ./LESSON_5/5.3_Initializing_your_chart.md )
+* [ 5.3 Initializing your chart ]( ./LESSON_5/5.3_Initializing_your_chart/5.3_Initializing_your_chart.md )
  
-* [ 5.4 Templatizing the deployment ]( ./LESSON_5/5.4_Templatizing_the_deployment.md )
+* [ 5.4 Templatizing the deployment ]( ./LESSON_5/5.4_Templatizing_the_deployment/5.4_Templatizing_the_deployment.md )
  
-* [ 5.5 Testing your templates ]( ./LESSON_5/5.5_Testing_your_templates.md )
+* [ 5.5 Testing your templates ]( ./LESSON_5/5.5_Testing_your_templates/5.5_Testing_your_templates.md )
  
-* [ 5.6 Templatizing the service and ingress ]( ./LESSON_5/5.6_Templatizing_the_service_and_ingress.md )
+* [ 5.6 Templatizing the service and ingress ]( ./LESSON_5/5.6_Templatizing_the_service_and_ingress/5.6_Templatizing_the_service_and_ingress.md )
  
-* [ 5.7 Templatizing the cert-manager issuer ]( ./LESSON_5/5.7_Templatizing_the_cert-manager_issuer.md )
+* [ 5.7 Templatizing the cert-manager issuer ]( ./LESSON_5/5.7_Templatizing_the_cert-manager_issuer/5.7_Templatizing_the_cert-manager_issuer.md )
  
-* [ 5.8 Deploying your Helm chart ]( ./LESSON_5/5.8_Deploying_your_Helm_chart.md )
+* [ 5.8 Deploying your Helm chart ]( ./LESSON_5/5.8_Deploying_your_Helm_chart/5.8_Deploying_your_Helm_chart.md )
  
-* [ 5.9 Challenge Explore California sale ]( ./LESSON_5/5.9_Challenge_Explore_California_sale.md )
+* [ 5.9 Challenge Explore California sale ]( ./LESSON_5/5.9_Challenge_Explore_California_sale/5.9_Challenge_Explore_California_sale.md )
  
-* [ 5.10 Solution Explore California sale ]( ./LESSON_5/5.10_Solution_Explore_California_sale.md )
+* [ 5.10 Solution Explore California sale ]( ./LESSON_5/5.10_Solution_Explore_California_sale/5.10_Solution_Explore_California_sale.md )
+
+
+
+
  
 # 6._Deploying_Explore_California_into_AWS_EKS
  
-* [ 6.1 From kind to EKS Whats changing ]( ./LESSON_6/6.1_From_kind_to_EKS_Whats_changing.md )
+* [ 6.1 From kind to EKS Whats changing ]( ./LESSON_6/6.1_From_kind_to_EKS_Whats_changing/6.1_From_kind_to_EKS_Whats_changing.md )
  
-* [ 6.2 Deploying your EKS cluster with eksctl ]( ./LESSON_6/6.2_Deploying_your_EKS_cluster_with_eksctl.md )
+* [ 6.2 Deploying your EKS cluster with eksctl ]( ./LESSON_6/6.2_Deploying_your_EKS_cluster_with_eksctl/6.2_Deploying_your_EKS_cluster_with_eksctl.md )
  
-* [ 6.3 Logging into your EKS cluster ]( ./LESSON_6/6.3_Logging_into_your_EKS_cluster.md )
+* [ 6.3 Logging into your EKS cluster ]( ./LESSON_6/6.3_Logging_into_your_EKS_cluster/6.3_Logging_into_your_EKS_cluster.md )
  
-* [ 6.4 Installing NGINX ingress controller into EKS ]( ./LESSON_6/6.4_Installing_NGINX_ingress_controller_into_EKS.md )
+* [ 6.4 Installing NGINX ingress controller into EKS ]( ./LESSON_6/6.4_Installing_NGINX_ingress_controller_into_EKS/6.4_Installing_NGINX_ingress_controller_into_EKS.md )
  
-* [ 6.5 Creating an ECR repository ]( ./LESSON_6/6.5_Creating_an_ECR_repository.md )
+* [ 6.5 Creating an ECR repository ]( ./LESSON_6/6.5_Creating_an_ECR_repository/6.5_Creating_an_ECR_repository.md )
  
-* [ 6.6 Deploying the Explore California image into ECR ]( ./LESSON_6/6.6_Deploying_the_Explore_California_image_into_ECR.md )
+* [ 6.6 Deploying the Explore California image into ECR ]( ./LESSON_6/6.6_Deploying_the_Explore_California_image_into_ECR/6.6_Deploying_the_Explore_California_image_into_ECR.md )
  
-* [ 6.7 Deploying Explore California into EKS ]( ./LESSON_6/6.7_Deploying_Explore_California_into_EKS.md )
+* [ 6.7 Deploying Explore California into EKS ]( ./LESSON_6/6.7_Deploying_Explore_California_into_EKS/6.7_Deploying_Explore_California_into_EKS.md )
  
-* [ 6.8 Installing cert-manager into EKS ]( ./LESSON_6/6.8_Installing_cert-manager_into_EKS.md )
+* [ 6.8 Installing cert-manager into EKS ]( ./LESSON_6/6.8_Installing_cert-manager_into_EKS/6.8_Installing_cert-manager_into_EKS.md )
+
+
+
  
 # 7._Deploying_Explore_California_into_Azure_AKS
  
-* [ 7.1 From kind to AKS Whats changing ]( ./LESSON_7/7.1_From_kind_to_AKS_Whats_changing.md )
+* [ 7.1 From kind to AKS Whats changing ]( ./LESSON_7/7.1_From_kind_to_AKS_Whats_changing/7.1_From_kind_to_AKS_Whats_changing.md )
  
-* [ 7.2 Deploying your AKS cluster with the Azure CLI ]( ./LESSON_7/7.2_Deploying_your_AKS_cluster_with_the_Azure_CLI.md )
+* [ 7.2 Deploying your AKS cluster with the Azure CLI ]( ./LESSON_7/7.2_Deploying_your_AKS_cluster_with_the_Azure_CLI/7.2_Deploying_your_AKS_cluster_with_the_Azure_CLI.md )
  
-* [ 7.3 Logging into your AKS cluster ]( ./LESSON_7/7.3_Logging_into_your_AKS_cluster.md )
+* [ 7.3 Logging into your AKS cluster ]( ./LESSON_7/7.3_Logging_into_your_AKS_cluster/7.3_Logging_into_your_AKS_cluster.md )
  
-* [ 7.4 Installing NGINX ingress controller into AKS ]( ./LESSON_7/7.4_Installing_NGINX_ingress_controller_into_AKS.md )
+* [ 7.4 Installing NGINX ingress controller into AKS ]( ./LESSON_7/7.4_Installing_NGINX_ingress_controller_into_AKS/7.4_Installing_NGINX_ingress_controller_into_AKS.md )
  
-* [ 7.5 Creating an ACR repository ]( ./LESSON_7/7.5_Creating_an_ACR_repository.md )
+* [ 7.5 Creating an ACR repository ]( ./LESSON_7/7.5_Creating_an_ACR_repository/7.5_Creating_an_ACR_repository.md )
  
-* [ 7.6 Deploying the Explore California image into ACR ]( ./LESSON_7/7.6_Deploying_the_Explore_California_image_into_ACR.md )
+* [ 7.6 Deploying the Explore California image into ACR ]( ./LESSON_7/7.6_Deploying_the_Explore_California_image_into_ACR/7.6_Deploying_the_Explore_California_image_into_ACR.md )
  
-* [ 7.7 Deploying Explore California into AKS ]( ./LESSON_7/7.7_Deploying_Explore_California_into_AKS.md )
+* [ 7.7 Deploying Explore California into AKS ]( ./LESSON_7/7.7_Deploying_Explore_California_into_AKS/7.7_Deploying_Explore_California_into_AKS.md )
  
-* [ 7.8 Installing cert-manager into AKS ]( ./LESSON_7/7.8_Installing_cert-manager_into_AKS.md )
+* [ 7.8 Installing cert-manager into AKS ]( ./LESSON_7/7.8_Installing_cert-manager_into_AKS/7.8_Installing_cert-manager_into_AKS.md )
+
+
+
+
 
 # 8._Conclusion
 
-* [8.1 Next steps](./CONCLUSION/8.1_Next_steps.md)
+* [8.1 Next steps](./CONCLUSION/8.1_Next_steps/8.1_Next_steps.md)
  
