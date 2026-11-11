@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/issuer: {{ .Values.ingress.issuerName }}
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+  namespace: default
+spec:
+  rules:
+  - host: {{ .Values.ingress.host }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: {{ .Chart.Name }}-{{ .Release.Name }}
+            port:
+              number: {{ .Values.ports.source }}
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - explorecalifornia.local
+    secretName: {{ .Values.ingress.tlsSecret }}

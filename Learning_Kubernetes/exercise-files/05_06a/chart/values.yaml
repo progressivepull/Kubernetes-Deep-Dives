@@ -1,0 +1,11 @@
+replicas: 1
+image:
+  name: localhost/explorecalifornia.com
+  pullPolicy: IfNotPresent
+ports:
+  source: 80
+  service: 8080
+ingress:
+  host: explorecalifornia.local
+  issuerName: explorecalifornia-ingress
+  tlsSecret: explorecalifornia-tls-data
