@@ -1,29 +1,11 @@
 
-# 0.Introduction
-* [0.1 Your first project on Kubernetes](./INTRODUCTION/0.1_Your_first_project_on_Kubernetes.md)
-
-* [0.2 What you should know](./INTRODUCTION/0.2_What_you_should_know.md)
-
-# 1._Kubernetes_at_a_Glance
- * [ 1.1 Our application before Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes/1.1_Our_application_before_Kubernetes.md )
- * [ 1.2 What is Kubernetes ]( ./LESSON_1/1.1_Our_application_before_Kubernetes/1.2_What_is_Kubernetes.md )
- * [ 1.3 Our application after Kubernetes ]( ./LESSON_1/1.3_Our_application_after_Kubernetes/1.3_Our_application_after_Kubernetes.md )
-
-* [ 1.4 Recommended courses ]( ./LESSON_1/1.4_Recommended_courses/1.4_Recommended_courses.md )
- # 2._Setting_Up_Your_Environment
- * [ 2.1 Tools we will be using ]( ./LESSON_2/2.1_Tools_we_will_be_using/2.1_Tools_we_will_be_using.md )
- * [ 2.2 Preparing Windows machines ]( ./LESSON_2/2.2_Preparing_Windows_machines/2.2_Preparing_Windows_machines.md )
- * [ 2.3 Installing Podman Desktop on macOS ]( ./LESSON_2/2.3_Installing_Podman_Desktop_on_macOS/2.3_Installing_Podman_Desktop_on_macOS.md )
- * [ 2.4 Installing Podman Desktop on Windows ]( ./LESSON_2/2.4_Installing_Podman_Desktop_on_Windows/2.4_Installing_Podman_Desktop_on_Windows.md )
- * [ 2.5 Other popular container managers ]( ./LESSON_2/2.5_Other_popular_container_managers/2.5_Other_popular_container_managers.md )
- * [ 2.6 Installing kind ]( ./LESSON_2/2.6_Installing_kind/2.6_Installing_kind.md )
- * [ 2.7 Installing Helm ]( ./LESSON_2/2.7_Installing_Helm/2.7_Installing_Helm.md )
- * [ 2.8 Installing AWS CLI and Azure CLI ]( ./LESSON_2/2.8_Installing_AWS_CLI_and_Azure_CLI.md )
+ * [ 2.8 Installing AWS CLI and Azure CLI ]( ./LESSON_2/2.8_Installing_AWS_CLI_and_Azure_CLI.md )
  * [ 2.9 Installing AWS eksctl ]( ./LESSON_2/2.9_Installing_AWS_eksctl.md )
  * [ 2.10 Configuring AWS access ]( ./LESSON_2/2.10_Configuring_AWS_access.md )
- * [ 2.11 11m video ]( ./LESSON_2/2.11_11m_video.md )
- * [ 2.12 Configuring Azure access interactively ]( ./LESSON_2/2.12_Configuring_Azure_access_interactively.md )
- * [ 2.13 Configuring Azure access with a service principal ]( ./LESSON_2/2.13_Configuring_Azure_access_with_a_service_principal.md )
+ * [ 2.11 Configuring Azure access interactively ]( ./LESSON_2/2.11_Configuring_Azure_access_interactively.md )
+ * [ 2.12 Configuring Azure access with a service principal ]( ./LESSON_2/2.12_Configuring_Azure_access_with_a_service_principal.md )
+
+* [2.13 Chapter Quiz] (./LESSON_2/2.13_Chapter_Quiz.md)
  # 3._Containerizing_Explore_California
  * [ 3.1 Lets containerize Explore California ]( ./LESSON_3/3.1_Lets_containerize_Explore_California.md )
  * [ 3.2 Creating the Dockerfile ]( ./LESSON_3/3.2_Creating_the_Dockerfile.md )
