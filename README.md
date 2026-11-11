@@ -115,37 +115,37 @@ These are some of the most important Kubernetes resources.
 
 The smallest deployable unit in Kubernetes. A Pod contains one or more containers.
 
-<img src="README_media/media/image4.png" style="width:2.26843in;height:2.50424in" />
+<img src="README_media/media/image4.png" style="width:4.26843in;height:4.50424in" />
 
 ### 2. Deployment
 
 Manages application Pods and replicas. Supports scaling and rolling updates.
 
-<img src="README_media/media/image5.png" style="width:2.96186in;height:1.83376in" />
+<img src="README_media/media/image5.png" style="width:4.96186in;height:3.83376in" />
 
 ### 3. Service
 
 Provides a stable network endpoint for accessing Pods.
 
-<img src="README_media/media/image6.png" style="width:2.03531in;height:2.03814in" />
+<img src="README_media/media/image6.png" style="width:4.03531in;height:4.03814in" />
 
 ### 4. ConfigMap and Secret
 
 Store application configuration and sensitive information, respectively.
 
-<img src="README_media/media/image7.png" style="width:3.30915in;height:2.29661in" />
+<img src="README_media/media/image7.png" style="width:5.30915in;height:4.29661in" />
 
 ### 5. Persistent Volume (PV)
 
 Provides persistent storage for applications.
 
-<img src="README_media/media/image8.png" style="width:2.03168in;height:2.08898in" />
+<img src="README_media/media/image8.png" style="width:4.03168in;height:4.08898in" />
 
 ### 6. Ingress
 
 Manages external HTTP and HTTPS access to services through an Ingress controller.
 
-<img src="README_media/media/image9.png" style="width:2.56213in;height:2.60593in" />
+<img src="README_media/media/image9.png" style="width:4.56213in;height:4.60593in" />
 
 ## **5. Kubernetes vs. Docker**
 
