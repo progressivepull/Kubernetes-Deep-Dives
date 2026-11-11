@@ -20,9 +20,9 @@
 
 ---
 
-**Kubernetes Introduction**
+# **Kubernetes Introduction**
 
-**1. What is Kubernetes?**
+## **1. What is Kubernetes?**
 
 Kubernetes (K8s) is an open-source container orchestration platform used to deploy, manage, scale, and monitor containerized applications.
 
@@ -111,43 +111,43 @@ Worker Nodes run your application containers.
 
 These are some of the most important Kubernetes resources.
 
-## 1. Pod
+### 1. Pod
 
 The smallest deployable unit in Kubernetes. A Pod contains one or more containers.
 
 <img src="README_media/media/image4.png" style="width:2.26843in;height:2.50424in" />
 
-## 2. Deployment
+### 2. Deployment
 
 Manages application Pods and replicas. Supports scaling and rolling updates.
 
 <img src="README_media/media/image5.png" style="width:2.96186in;height:1.83376in" />
 
-## 3. Service
+### 3. Service
 
 Provides a stable network endpoint for accessing Pods.
 
 <img src="README_media/media/image6.png" style="width:2.03531in;height:2.03814in" />
 
-## 4. ConfigMap and Secret
+### 4. ConfigMap and Secret
 
 Store application configuration and sensitive information, respectively.
 
 <img src="README_media/media/image7.png" style="width:3.30915in;height:2.29661in" />
 
-5\. Persistent Volume (PV)
+## 5. Persistent Volume (PV)
 
 Provides persistent storage for applications.
 
 <img src="README_media/media/image8.png" style="width:2.03168in;height:2.08898in" />
 
-6\. Ingress
+### 6. Ingress
 
 Manages external HTTP and HTTPS access to services through an Ingress controller.
 
 <img src="README_media/media/image9.png" style="width:2.56213in;height:2.60593in" />
 
-**5. Kubernetes vs. Docker**
+## **5. Kubernetes vs. Docker**
 
 Docker and Kubernetes serve different purposes.
 
@@ -164,7 +164,7 @@ Docker and Kubernetes serve different purposes.
 
 Important: Docker builds container images. Kubernetes manages containerized applications across a cluster. Kubernetes does not require Docker Engine as its container runtime.
 
-**6. Kubernetes YAML Configuration**
+## **6. Kubernetes YAML Configuration**
 
 Kubernetes uses YAML files to define application resources.
 
@@ -213,7 +213,7 @@ Explanation:
 | image         | Docker/container image to run.         |
 | containerPort | Port exposed by the container.         |
 
-**7. Common Kubernetes Commands**
+## **7. Common Kubernetes Commands**
 
 These commands are useful when working with Minikube or Docker Desktop Kubernetes.
 
@@ -232,7 +232,7 @@ These commands are useful when working with Minikube or Docker Desktop Kubernete
 | kubectl delete -f deployment.yaml | Delete resources defined in a file. |
 | kubectl scale deployment angular-app --replicas=3 | Scale a Deployment to three replicas. |
 
-**8. Kubernetes Deployment Workflow**
+## **8. Kubernetes Deployment Workflow**
 
 A typical application deployment workflow looks like this:
 
@@ -254,7 +254,7 @@ A typical application deployment workflow looks like this:
 
 8.  Expose the application using a Kubernetes Service or Ingress.
 
-**9. Kubernetes Development Tools**
+## **9. Kubernetes Development Tools**
 
 | **Tool** | **Purpose** |
 |----|----|
@@ -265,7 +265,7 @@ A typical application deployment workflow looks like this:
 | K9s | Terminal-based Kubernetes management interface. |
 | Kubernetes Dashboard | Web-based Kubernetes management interface. |
 
-**10. Learning Roadmap**
+## **10. Learning Roadmap**
 
 A suggested learning sequence:
 
@@ -293,7 +293,7 @@ Learn scaling, rolling updates, health checks, and resource limits.
 
 Learn Helm, StatefulSets, DaemonSets, RBAC, monitoring, and CI/CD.
 
-**11. Hands-on Practice**
+## **11. Hands-on Practice**
 
 A good first project is a three-tier application:
 
@@ -315,7 +315,7 @@ You can practice:
 
 - Troubleshooting Pods and application logs.
 
-**12. Knowledge Check**
+## **12. Knowledge Check**
 
 Kubernetes Basics Quiz
 
