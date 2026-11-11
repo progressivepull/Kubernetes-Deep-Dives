@@ -69,8 +69,7 @@ they fail.
   | Job         |           Runs a task to completion.|
   | CronJob          |      Runs Jobs on a recurring schedule.|
   | Rolling Update  |       Gradually replaces older Pods with newer ones.|
-  | Horizontal Pod    |     Automatically adjusts the number of Pods based on metrics.|
-  | Autoscaler (HPA)   |    																			|
+  | Horizontal Pod Autoscaler (HPA)    |     Automatically adjusts the number of Pods based on metrics.| 																			|
   | Self-Healing      |     Kubernetes detects failures and replaces or restarts affected workloads.|
 
 
@@ -111,9 +110,7 @@ illustrative Deployment name java-app.
   | NodePort       | Exposes a Service on a port of each node.|
   | LoadBalancer   | Exposes a Service through an external load balancer, when supported.|
   | Ingress        | Defines HTTP/HTTPS routing rules for incoming traffic.|
-  | Ingress         |Implements the routing rules defined by Ingress resources.|
-  | Ingress         |Implements the routing rules defined by Ingress resources.|
-  | Controller      |               											|								   
+  | Ingress Controller        |Implements the routing rules defined by Ingress resources.|               											|								   
   | Gateway API    | A newer, more expressive set of APIs for traffic routing. |
   | CoreDNS         |Provides DNS-based service discovery inside Kubernetes.|
   | NetworkPolicy  | Controls allowed network traffic between Pods and other endpoints.|
@@ -133,8 +130,7 @@ Traffic is routed to one of the healthy application Pods.
   |-------------------|----------------------------------------------------------------------------------|
   |Volume                  |Storage mounted into containers within a Pod.|
   |PersistentVolume (PV)   |A cluster storage resource with a lifecycle independent of a particular Pod.|
- | PersistentVolumeClaim   |A request for persistent storage by an application.|
-  |(PVC)                   |        																|
+ | PersistentVolumeClaim (PVC)   |A request for persistent storage by an application.|               |        																|
   |StorageClass            |Defines a class of storage and its provisioning behavior. |                  
  | CSI                     |Container Storage Interface, allowing Kubernetes to integrate with storage systems. |                    
   |emptyDir                |Temporary storage shared by containers in a Pod, deleted when the Pod is removed from its node.|
@@ -165,12 +161,9 @@ replacement.
 
   |**Term**           | **Definition**										                             |
   |-------------------|----------------------------------------------------------------------------------|
-  |Liveness    | Checks whether a container needs to be restarted.|
-  |Probe        |                                    |
-  |Readiness   | Checks whether a container is ready to receive traffic.|
-  |Probe    |                              |     
- | Startup     | Allows slow-starting applications time to initialize. | 
-  |Probe        |                                                           |
+  |Liveness Probe   | Checks whether a container needs to be restarted.|                                   |
+  |Readiness Probe  | Checks whether a container is ready to receive traffic.|                             |     
+ | Startup  Probe   | Allows slow-starting applications time to initialize. |                                                          |
  | kubectl      |Command-line tool used to manage Kubernetes resources.|
   |Helm        | Package manager used to install and manage Kubernetes  applications.|
   |Helm Chart   |A collection of templates and configuration for deploying an application.|
@@ -194,10 +187,8 @@ replacement.
  | kubectl logs my-pod                 |Display container logs.|
 |  kubectl apply -f app.yaml           |Create or update resources from YAML.   |                       
  |  kubectl delete -f app.yaml          |Delete resources defined in YAML. |
- |  kubectl scale deployment my-app     |Scale a Deployment to five Pods. |
- |  \--replicas=5                       | 									|
- |  kubectl rollout status              |Check Deployment rollout progress. |
- | deployment/my-app                   | 									|
+ |  kubectl scale deployment my-app --replicas=5    |Scale a Deployment to five Pods. |									|
+ |  kubectl rollout status deployment/my-app             |Check Deployment rollout progress. |
   | kubectl exec -it my-pod \-- /bin/sh |Open a shell in a running container, if available. |
                                       
 
