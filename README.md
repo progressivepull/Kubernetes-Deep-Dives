@@ -374,4 +374,5 @@ Kubernetes Basics Quiz
 **Next step:** Build a hands-on Kubernetes project using your Angular, Spring Boot, and MongoDB application, starting with Docker images and Kubernetes Deployments.
 
 # Official Reference: 
-* [Kubernetes Concepts Documentation](https://kubernetes.io/docs/concepts/).
+* [Kubernetes Concepts Documentation](https://kubernetes.io/docs/concepts/)
+* [Kind Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start)
