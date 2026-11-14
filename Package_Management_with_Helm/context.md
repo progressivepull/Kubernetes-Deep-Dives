@@ -8,7 +8,7 @@
 
 # 1. Overview: Kubernetes Package Management with Helm
  
-* [ 1.1 What is Helm? ]( ./LESSON_1/1.1_What_is_Helm?/1.1_What_is_Helm?.md )
+* [ 1.1 What is Helm ]( ./LESSON_1/1.1_What_is_Helm/1.1_What_is_Helm.md )
  
 * [ 1.2 Helm in real life ]( ./LESSON_1/1.2_Helm_in_real_life/1.2_Helm_in_real_life.md )
  
