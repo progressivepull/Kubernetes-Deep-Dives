@@ -17,6 +17,7 @@
 * [Common Kubernetes Terms Beginners Guide](./Table_of_Contents/Common_Kubernetes_Terms_Beginners_Guide/Common_Kubernetes_Terms_Beginners_Guide.md)
 * [Converting Docker Compose to Kubernetes](./Table_of_Contents/Converting_Docker_Compose_to_Kubernetes/Converting_Docker_Compose_to_Kubernetes.md)
 * [YAML Files Explained](./Table_of_Contents/YAML_Files_Explained/YAML_Files_Explained.md)
+* [How Kubernetes connects Pods to a Service](./Table_of_Contents/How_Kubernetes_connects_Pods_to_a_Service/How_Kubernetes_connects_Pods_to_a_Service.md)
 * [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
 * [Build your local AI Kubernetes environment](./Table_of_Contents/Build_your_local_AI_Kubernetes_environment/Build_your_local_AI_Kubernetes_environment.md)
 * [Helm and Kubernetes to set up a local AI environment](./Table_of_Contents/Helm_and_Kubernetes_to_set_up_a_local_AI_environment/Helm_and_Kubernetes_to_set_up_a_local_AI_environment.md)
@@ -115,7 +116,18 @@ Worker Nodes run your application containers.
 
 ## **4. Important Kubernetes Objects**
 
+<img src="README_media/media/image12.png" style="width:4.26843in;height:4.50424in" />
+
+This diagram shows how Kubernetes organizes Clusters → Nodes → Pods → Containers, and how a Service distributes traffic to Pods across multiple Nodes.
+
+Key concepts:
+- Cluster: The entire Kubernetes environment.
+- Node: A worker machine inside the cluster.
+- Pod: The smallest deployable Kubernetes unit.
+- Container: Runs your application, such as Nginx or Spring Boot.
+- Service: Provides a stable network endpoint and routes traffic to matching Pods using labels and selectors.
 These are some of the most important Kubernetes resources.
+
 
 ### 1. Pod
 
