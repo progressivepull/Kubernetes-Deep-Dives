@@ -17,6 +17,8 @@
 * [Converting Docker Compose to Kubernetes](./Table_of_Contents/Converting_Docker_Compose_to_Kubernetes/Converting_Docker_Compose_to_Kubernetes.md)
 * [YAML Files Explained](./Table_of_Contents/YAML_Files_Explained/YAML_Files_Explained.md)
 * [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
+* [Build your local AI Kubernetes environment](./Table_of_Contents/Build_your_local_AI_Kubernetes_environment/Build_your_local_AI_Kubernetes_environment.md)
+* [Helm and Kubernetes to set up a local AI environment](./Table_of_Contents/Helm_and_Kubernetes_to_set_up_a_local_AI_environment/Helm_and_Kubernetes_to_set_up_a_local_AI_environment.md)
 
 ---
 
