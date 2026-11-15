@@ -202,4 +202,4 @@ Kubernetes uses this matching mechanism to automatically discover Pods and distr
 
 **Next step:** I can show you how to connect two different applications, such as a Spring Boot application Pod connecting to a MySQL database Pod using Kubernetes Services.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
