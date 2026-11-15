@@ -452,4 +452,4 @@ Target installation
 
 **My recommendation:** Get Qwen 2.5 3B running first, verify GPU utilization, and then expand your Kubernetes environment with additional AI services such as document search (RAG), embeddings, and a vector database.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
