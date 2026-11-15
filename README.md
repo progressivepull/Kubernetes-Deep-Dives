@@ -20,6 +20,9 @@
 * [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
 * [Build your local AI Kubernetes environment](./Table_of_Contents/Build_your_local_AI_Kubernetes_environment/Build_your_local_AI_Kubernetes_environment.md)
 * [Helm and Kubernetes to set up a local AI environment](./Table_of_Contents/Helm_and_Kubernetes_to_set_up_a_local_AI_environment/Helm_and_Kubernetes_to_set_up_a_local_AI_environment.md)
+* [Popular Kubernetes Helm Packages](./Table_of_Contents/Popular_Kubernetes_Helm_Packages/Popular_Kubernetes_Helm_Packages.md)
+
+
 
 ---
 
