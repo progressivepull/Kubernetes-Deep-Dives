@@ -116,7 +116,7 @@ Worker Nodes run your application containers.
 
 ## **4. Important Kubernetes Objects**
 
-<img src="README_media/media/image12.png" style="width:4.26843in;height:4.50424in" />
+<img src="README_media/media/image12.png" style="width:5.26843in;height:4.50424in" />
 
 This diagram shows how Kubernetes organizes Clusters → Nodes → Pods → Containers, and how a Service distributes traffic to Pods across multiple Nodes.
 
