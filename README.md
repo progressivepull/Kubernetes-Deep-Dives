@@ -6,6 +6,7 @@
 
 * [Learning Kubernetes Contents](./Learning_Kubernetes/contents.md)
 * [Kubernetes Your First Project Contents](./Kubernetes_Your_First_Project/context.md)
+* [Package Management with Helm](./Package_Management_with_Helm/context.md)
 
 ---
 
