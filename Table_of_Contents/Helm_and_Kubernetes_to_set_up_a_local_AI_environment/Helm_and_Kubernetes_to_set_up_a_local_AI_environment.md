@@ -138,4 +138,4 @@ Kubernetes manages your AI containers, but the actual AI model requires RAM and 
 
 For local development, CPU inference is possible. A compatible GPU can significantly improve performance.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
