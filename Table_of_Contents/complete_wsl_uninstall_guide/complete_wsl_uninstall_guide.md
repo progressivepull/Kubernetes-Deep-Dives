@@ -87,6 +87,48 @@ You can also uninstall any remaining Ubuntu distribution app listed there.
 
 ## Step 8: Check for leftover configuration files (optional)
 
+To open your WSL configuration file (.wslconfig) in Windows, use PowerShell.
+
+Option 1: Open with Notepad
+```powershell
+notepad "$env:USERPROFILE\.wslconfig"
+```
+
+
+Option 2: Open with Visual Studio Code
+```powershell
+code "$env:USERPROFILE\.wslconfig"
+```
+
+
+Option 3: Open using the Run dialog
+1. Press Win + R.
+2. Enter:
+%UserProfile%\.wslconfig
+
+
+3. Press Enter.
+
+If the file doesn't exist, create it using:
+```powershell
+notepad "$env:USERPROFILE\.wslconfig"
+```
+
+**.wslconfig**
+```
+[wsl2]
+memory=10GB
+processors=8
+swap=4GB
+localhostForwarding=true
+```
+
+
+Notepad will ask whether you want to create the file. Select Yes.
+
+After editing .wslconfig, restart WSL to apply the changes:
+wsl --shutdown
+
 The following file may contain WSL configuration:
 
 ```text
