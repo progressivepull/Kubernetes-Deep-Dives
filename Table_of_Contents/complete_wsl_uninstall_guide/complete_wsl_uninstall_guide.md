@@ -87,6 +87,32 @@ You can also uninstall any remaining Ubuntu distribution app listed there.
 
 ## Step 8: Check for leftover configuration files (optional)
 
+Show the path for User Profile
+In PowerShell, use:
+```powershell
+$env:USERPROFILE
+```
+
+Example path:
+```
+C:\Users\cocon\
+```
+
+To open your user profile folder in File Explorer:
+```powershell
+explorer $env:USERPROFILE
+```
+
+To list files and folders:
+```powershell
+Get-ChildItem $env:USERPROFILE
+```
+
+To open the .wslconfig file:
+```powershell
+notepad "$env:USERPROFILE\.wslconfig"
+```
+
 To open your WSL configuration file (.wslconfig) in Windows, use PowerShell.
 
 Option 1: Open with Notepad
