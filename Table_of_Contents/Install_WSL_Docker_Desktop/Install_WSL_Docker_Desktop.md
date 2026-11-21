@@ -179,7 +179,54 @@ wsl --version
 
 wsl --list --verbose
 ```
+To change the default WSL distribution in Windows, use PowerShell or Command Prompt.
 
+List installed WSL distributions
+```bash
+wsl --list --verbose
+```
+
+Example:
+```
+  NAME            STATE           VERSION
+* Ubuntu-24.04    Stopped         2
+  docker-desktop  Stopped         2
+```
+
+Change the default distribution
+Set Ubuntu 24.04 as the default:
+```bash
+wsl --set-default Ubuntu-24.04
+```
+
+Or use the shorter command:
+```bash
+wsl -s Ubuntu-24.04
+```
+
+Verify the default distribution
+```bash
+wsl --list --verbose
+```
+
+
+
+The * indicates the default distribution.
+4. Open the default distribution
+wsl
+
+
+**Useful WSL commands**
+|Command	            |Description                     |
+|---------------------|--------------------------------|
+|wsl -l -v	          | List distributions             |
+|wsl -s Ubuntu-24.04  |	Set default distribution       |
+|wsl -d Ubuntu-24.04  |	Launch specific distribution   |
+|wsl --shutdown	      | Stop all WSL distributions     |
+|wsl --status	        | Show WSL status                |
+|wsl --update	        | Update WSL                     |
+
+Important: wsl --set-default changes the default Linux distribution launched by wsl. It does not change Docker Desktop's WSL integration settings.
 
 **4. Install Docker Desktop**
 
