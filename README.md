@@ -13,6 +13,7 @@
 # Table of Contents
 
 * [Install WSL Docker Desktop](./Table_of_Contents/Install_WSL_Docker_Desktop/Install_WSL_Docker_Desktop.md)
+* [Fix Kubernetes Connection Refused on Debian (Setup Minikube) ](./Table_of_Contents/Fix_Kubernetes_Connection_Refused_on_Debian/Fix_Kubernetes_Connection_Refused_on_Debian.md)
 * [Complete Uninstallation of WSL on Windows 11](./Table_of_Contents/complete_wsl_uninstall_guide/complete_wsl_uninstall_guide.md)
 * [Migrate Docker Compose to Kubernetes YML File](./Table_of_Contents/Migrate_Docker_Compose_Kubernetes/Migrate_Docker_Compose_Kubernetes.md)
 * [Common Kubernetes Commands](./Table_of_Contents/Common_Kubernetes_Commands/Common_Kubernetes_Commands.md)
@@ -26,6 +27,7 @@
 * [Popular Kubernetes Helm Packages](./Table_of_Contents/Popular_Kubernetes_Helm_Packages/Popular_Kubernetes_Helm_Packages.md)
 * [Docker Hub: Push and Pull Instructions](./Table_of_Contents/docker-hub-push-pull-instructions/docker-hub-push-pull-instructions.md)
 * [Helm Kubernetes Frontend with Persistent Data Storage](./Table_of_Contents/Helm_Kubernetes_Frontend_with Persistent_Data_Storage/Helm_Kubernetes_Frontend_with Persistent_Data_Storage.md)
+
 
 
 
