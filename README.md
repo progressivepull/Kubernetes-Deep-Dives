@@ -27,6 +27,7 @@
 **Debian Linux**
 * [Install Docker Engine](./Table_of_Contents/Install_Docker_Engine/Install_Docker_Engine.md)
 * [Fix Kubernetes Connection Refused on Debian (Setup Minikube) ](./Table_of_Contents/Fix_Kubernetes_Connection_Refused_on_Debian/Fix_Kubernetes_Connection_Refused_on_Debian.md)
+* [Permission to access the Docker Socket]( ./Table_of_Contents/Permission_Docker_Socket/Permission_Docker_Socket.md)
 * [How to Install kubectl on Debian Linux](./Table_of_Contents/install-kubectl-debian/install-kubectl-debian.md)
 
 **Tutorials**
