@@ -16,7 +16,7 @@ Angular should communicate with MongoDB through the backend API, not connect dir
 
 1.  **Kubernetes architecture**
 
-<img src="Helm_Kubernetes_Frontend_with Persistent_Data_Storage_media/media/image1.png" style="width:4.17383in;height:4.86136in" />
+<img src="Helm_Kubernetes_Frontend_with_Persistent_Data_Storage_media/media/image1.png" style="width:4.17383in;height:4.86136in" />
 
 **2. Recommended project file structure**
 
@@ -24,7 +24,7 @@ Angular should communicate with MongoDB through the backend API, not connect dir
 
 **angular-mongo-project/**
 
-<img src="Helm_Kubernetes_Frontend_with Persistent_Data_Storage_media/media/image2.png" style="width:6.5in;height:3.56736in" />
+<img src="Helm_Kubernetes_Frontend_with_Persistent_Data_Storage_media/media/image2.png" style="width:6.5in;height:3.56736in" />
 
 **What each Kubernetes YAML file does**
 
@@ -194,7 +194,7 @@ The Node.js backend can access MongoDB using the internal Kubernetes DNS name mo
 
 MongoDB data storage
 
-<img src="Helm_Kubernetes_Frontend_with Persistent_Data_Storage_media/media/image3.png" style="width:6.04892in;height:1.21534in" />
+<img src="Helm_Kubernetes_Frontend_with_Persistent_Data_Storage_media/media/image3.png" style="width:6.04892in;height:1.21534in" />
 
 MongoDB writes database files to /data/db, which is mounted from persistent storage.
 
