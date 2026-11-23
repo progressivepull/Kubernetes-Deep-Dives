@@ -12,6 +12,13 @@
 
 # Table of Contents
 
+**Introductions**
+* [Common Kubernetes Terms Beginners Guide](./Table_of_Contents/Common_Kubernetes_Terms_Beginners_Guide/Common_Kubernetes_Terms_Beginners_Guide.md)
+* [Common Kubernetes Commands](./Table_of_Contents/Common_Kubernetes_Commands/Common_Kubernetes_Commands.md)
+* [YAML Files Explained](./Table_of_Contents/YAML_Files_Explained/YAML_Files_Explained.md)
+* [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
+* [Popular Kubernetes Helm Packages](./Table_of_Contents/Popular_Kubernetes_Helm_Packages/Popular_Kubernetes_Helm_Packages.md)
+
 **Microsoft Windows 11**
 * [Install WSL Docker Desktop](./Table_of_Contents/Install_WSL_Docker_Desktop/Install_WSL_Docker_Desktop.md)
 * [Complete Uninstallation of WSL on Windows 11](./Table_of_Contents/complete_wsl_uninstall_guide/complete_wsl_uninstall_guide.md)
@@ -20,17 +27,12 @@
 * [Fix Kubernetes Connection Refused on Debian (Setup Minikube) ](./Table_of_Contents/Fix_Kubernetes_Connection_Refused_on_Debian/Fix_Kubernetes_Connection_Refused_on_Debian.md)
 
 **Tutorials**
-* [Common Kubernetes Terms Beginners Guide](./Table_of_Contents/Common_Kubernetes_Terms_Beginners_Guide/Common_Kubernetes_Terms_Beginners_Guide.md)
-* [Common Kubernetes Commands](./Table_of_Contents/Common_Kubernetes_Commands/Common_Kubernetes_Commands.md)
-* [YAML Files Explained](./Table_of_Contents/YAML_Files_Explained/YAML_Files_Explained.md)
-* [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
+* [Docker Hub: Push and Pull Instructions](./Table_of_Contents/docker-hub-push-pull-instructions/docker-hub-push-pull-instructions.md)
 * [Migrate Docker Compose to Kubernetes YML File](./Table_of_Contents/Migrate_Docker_Compose_Kubernetes/Migrate_Docker_Compose_Kubernetes.md)
 * [Converting Docker Compose to Kubernetes](./Table_of_Contents/Converting_Docker_Compose_to_Kubernetes/Converting_Docker_Compose_to_Kubernetes.md)
 * [How Kubernetes connects Pods to a Service](./Table_of_Contents/How_Kubernetes_connects_Pods_to_a_Service/How_Kubernetes_connects_Pods_to_a_Service.md)
 * [Build your local AI Kubernetes environment](./Table_of_Contents/Build_your_local_AI_Kubernetes_environment/Build_your_local_AI_Kubernetes_environment.md)
 * [Helm and Kubernetes to set up a local AI environment](./Table_of_Contents/Helm_and_Kubernetes_to_set_up_a_local_AI_environment/Helm_and_Kubernetes_to_set_up_a_local_AI_environment.md)
-* [Popular Kubernetes Helm Packages](./Table_of_Contents/Popular_Kubernetes_Helm_Packages/Popular_Kubernetes_Helm_Packages.md)
-* [Docker Hub: Push and Pull Instructions](./Table_of_Contents/docker-hub-push-pull-instructions/docker-hub-push-pull-instructions.md)
 * [Helm Kubernetes Frontend with Persistent Data Storage](./Table_of_Contents/Helm_Kubernetes_Frontend_with_Persistent_Data_Storage/Helm_Kubernetes_Frontend_with_Persistent_Data_Storage.md)
 
 
