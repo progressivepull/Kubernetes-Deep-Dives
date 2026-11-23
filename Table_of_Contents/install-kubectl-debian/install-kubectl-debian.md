@@ -128,3 +128,5 @@ If you have not installed or configured a Kubernetes cluster yet, the connectivi
 To run Kubernetes locally, install a cluster such as **Kind** or **Minikube**. If Docker is already installed and working on your Debian VM, Kind is a good option.
 
 Official Kubernetes installation documentation: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+[README](./../../README.md)
