@@ -480,4 +480,4 @@ You can then create Kubernetes deployment and service YAML files to deploy your 
 
 **Final result:** Debian + Docker + Minikube + kubectl = A working local Kubernetes development environment.
 
-# [README](./../../../README.md)
+# [README](./../../README.md)
