@@ -1,0 +1,240 @@
+# Install Docker Engine on Debian 13 (Trixie)
+
+This guide explains how to install and configure Docker Engine on Debian 13 running inside VMware.
+
+Docker Engine is recommended over Docker Desktop for this environment because it is lightweight and works well with Kubernetes tools such as Kind and Minikube.
+
+## 1. Check Your Debian System
+
+Open the Debian terminal.
+
+Check your Debian version:
+
+```bash
+cat /etc/os-release
+```
+
+Check available disk space:
+
+```bash
+df -h /
+```
+
+Check memory:
+
+```bash
+free -h
+```
+
+Check whether Docker is already installed:
+
+```bash
+docker --version
+sudo systemctl status docker
+```
+
+**Disk space recommendation:** Have at least 5 GB free before installing Docker and starting your Kubernetes environment. More space is recommended for container images and Kubernetes workloads.
+
+## 2. Add Docker's Official Repository
+
+Update the package list:
+
+```bash
+sudo apt update
+```
+
+Install required packages:
+
+```bash
+sudo apt install -y ca-certificates curl
+```
+
+Create the directory for repository signing keys:
+
+```bash
+sudo install -m 0755 -d /etc/apt/keyrings
+```
+
+Download Docker's official GPG key:
+
+```bash
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg \
+  -o /etc/apt/keyrings/docker.asc
+```
+
+Set the appropriate permissions:
+
+```bash
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+```
+
+Add the Docker repository:
+
+```bash
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/debian
+Suites: trixie
+Components: stable
+Architectures: amd64
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+```
+
+Update the package list:
+
+```bash
+sudo apt update
+```
+
+## 3. Verify Docker Packages
+
+Check whether Docker Engine is available:
+
+```bash
+apt-cache policy docker-ce
+```
+
+You should see an installation candidate.
+
+## 4. Install Docker Engine
+
+Install Docker Engine, Docker CLI, containerd, Buildx, and Docker Compose:
+
+```bash
+sudo apt install -y \
+  docker-ce \
+  docker-ce-cli \
+  containerd.io \
+  docker-buildx-plugin \
+  docker-compose-plugin
+```
+
+## 5. Start and Enable Docker
+
+Enable Docker to start automatically when Debian boots:
+
+```bash
+sudo systemctl enable docker
+```
+
+Start Docker:
+
+```bash
+sudo systemctl start docker
+```
+
+Check Docker's status:
+
+```bash
+sudo systemctl status docker
+```
+
+Expected status:
+
+```text
+Active: active (running)
+```
+
+## 6. Test Docker Installation
+
+Run the official Docker test container:
+
+```bash
+sudo docker run hello-world
+```
+
+Expected output:
+
+```text
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+```
+
+This confirms that Docker can download and run containers.
+
+## 7. Configure Docker Without sudo
+
+By default, Docker commands require root privileges.
+
+Add your regular Linux user to the Docker group:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+Log out and log back into Debian, or restart the system.
+
+Test Docker without sudo:
+
+```bash
+docker run hello-world
+```
+
+**Security note:** Membership in the Docker group grants root-level privileges. Only add trusted users.
+
+## 8. Verify Docker Compose
+
+Check Docker Compose:
+
+```bash
+docker compose version
+```
+
+Check Docker Engine:
+
+```bash
+docker --version
+```
+
+Check Docker Buildx:
+
+```bash
+docker buildx version
+```
+
+Check Docker information:
+
+```bash
+docker info
+```
+
+## 9. Useful Docker Commands
+
+| Command | Description |
+|---|---|
+| `docker ps` | Show running containers |
+| `docker ps -a` | Show all containers |
+| `docker images` | List downloaded images |
+| `docker pull nginx` | Download NGINX image |
+| `docker run hello-world` | Test Docker |
+| `docker stop CONTAINER` | Stop a container |
+| `docker start CONTAINER` | Start a container |
+| `docker rm CONTAINER` | Remove a container |
+| `docker rmi IMAGE` | Remove an image |
+| `docker system df` | Check Docker disk usage |
+| `docker compose version` | Check Docker Compose |
+
+## 10. Prepare for Kubernetes
+
+Once Docker is working, you can install the following development tools:
+
+- Docker Engine
+- Docker Compose
+- Docker Buildx
+- kubectl
+- Kind
+- Helm
+
+Kind uses Docker containers to run Kubernetes nodes.
+
+## 11. Final Verification
+
+Run these commands:
+
+```bash
+docker --version
+docker compose version
+docker buildx version
+docker info
+docker run

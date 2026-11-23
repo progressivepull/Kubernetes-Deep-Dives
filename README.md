@@ -14,6 +14,7 @@
 
 **Introductions**
 * [Common Kubernetes Terms Beginners Guide](./Table_of_Contents/Common_Kubernetes_Terms_Beginners_Guide/Common_Kubernetes_Terms_Beginners_Guide.md)
+* [Understanding Docker and Kubernetes](./Table_of_Contents/Understanding_Docker_and_Kubernetes/Understanding_Docker_and_Kubernetes.md)
 * [Common Kubernetes Commands](./Table_of_Contents/Common_Kubernetes_Commands/Common_Kubernetes_Commands.md)
 * [YAML Files Explained](./Table_of_Contents/YAML_Files_Explained/YAML_Files_Explained.md)
 * [What is Helm](./Table_of_Contents/What_is_Helm/What_is_Helm.md)
@@ -24,6 +25,7 @@
 * [Complete Uninstallation of WSL on Windows 11](./Table_of_Contents/complete_wsl_uninstall_guide/complete_wsl_uninstall_guide.md)
 
 **Debian Linux**
+* [Install Docker Engine](./Table_of_Contents/Install_Docker_Engine/Install_Docker_Engine.md)
 * [Fix Kubernetes Connection Refused on Debian (Setup Minikube) ](./Table_of_Contents/Fix_Kubernetes_Connection_Refused_on_Debian/Fix_Kubernetes_Connection_Refused_on_Debian.md)
 
 **Tutorials**
