@@ -29,6 +29,7 @@
 * [Fix Kubernetes Connection Refused on Debian (Setup Minikube) ](./Table_of_Contents/Fix_Kubernetes_Connection_Refused_on_Debian/Fix_Kubernetes_Connection_Refused_on_Debian.md)
 * [Permission to access the Docker Socket]( ./Table_of_Contents/Permission_Docker_Socket/Permission_Docker_Socket.md)
 * [How to Install kubectl on Debian Linux](./Table_of_Contents/install-kubectl-debian/install-kubectl-debian.md)
+* [How to Start Docker Engine and Minikube](./Table_of_Contents/start-docker-and-minikube/start-docker-and-minikube.md)
 
 **Tutorials**
 * [Docker Hub: Push and Pull Instructions](./Table_of_Contents/docker-hub-push-pull-instructions/docker-hub-push-pull-instructions.md)
