@@ -86,6 +86,20 @@ Then push it:
 docker push progressivepull/my-angular-app:latest
 ```
 
+After pushing your Docker image to Docker Hub, you can see it in your Docker Hub account.
+
+1. Open Docker Hub
+Go to:
+
+[Docker Hub](https://hub.docker.com/?utm_source=chatgpt.com) 
+
+Sign in to your Docker Hub account.
+2. Click My Hub.
+3. Select Repositories.
+4. You will see your uploaded Docker images.
+
+<img src="docker-hub-push-pull-instructions_media/media/image1.png" style="width:6.5in;height:3.81181in" />
+
 ## 5. Pull an Image from Docker Hub
 
 Download an image:
